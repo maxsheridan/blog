@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-style: 500;
+    font-display: optional;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+        cursor: url('/assets/graphics/old_school_point.svg'), auto;
+}
+    
+html a:hover {
+        cursor: url('/assets/graphics/old_school_hover.svg'), auto;
+}
+
+body { 
+    height: 100vh; 
+    height: 100dvh;
+    margin: 0;
+    background: #111;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+} 
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 100vh;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 1.5rem 1rem;
+    }
+} 
+
+p {
+    font-family: 'ABC Diatype Semi-Mono', monospace;
+    font-size: clamp(1.15rem,3vw,1.3rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFEFC;
+    line-height: 1.5;
+    max-width: 45rem;
+    margin: 1rem 0 0 0;
+}
+
+p.small {
+    font-size: clamp(1.04rem,2.7vw,1.17rem);
+    color: #FF00C8;
+}
+
+h1 {
+    font-family: 'ABC Diatype Medium Semi-Mono', monospace;
+    font-size: clamp(2.75rem,6vw,3.75rem); 
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2;
+    margin: 1rem 0;
+    color: #FFFEFC;
+}
+
+a {
+    color: #637CED;
+    text-decoration: none;
+}
+
+svg.arrow-upper-right {
+    width: clamp(12px,1.75vw,13.5px);
+    height: auto;
+    margin: 0 .5rem .1rem -.1rem;
+}
