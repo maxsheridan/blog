@@ -314,11 +314,6 @@ nav p.small a:nth-child(2) {
 }
 
 p {
-    font-family: 'ABC Diatype Semi-Mono', monospace;
-    font-size: clamp(1.031rem,3vw,1.094rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #FFFEFC;
     line-height: 1.6;
     margin: 1rem 0 0 0;
 }
@@ -326,16 +321,6 @@ p {
 p.small {
     font-family: 'ABC Diatype Semi-Mono Medium', monospace;
     font-size: 1rem;
-}
-
-h2 {
-    font-family: 'ABC Diatype Semi-Mono', monospace;
-    font-size: clamp(1.49rem,4vw,1.65rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #637CED;
-    line-height: 1.4;
-    margin: 0 0 1.5rem 0;
 }
 
 h3 {
@@ -358,21 +343,6 @@ h1 {
     margin: 0 0 1.5rem 0;
 }
 
-article:nth-child(n+2) h1 {
-    margin-top: 3rem;
-}
-
-i,
-em {
-    font-style: italic;
-}
-
-b,
-strong {
-    font-family: 'ABC Diatype Medium', Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-
 a {
     color: #637CED;
     text-decoration: none;
@@ -386,17 +356,39 @@ form {
     padding: 5rem 2rem 0 2rem;
 }
 
+#hola {
+    display: flex;
+    justify-content: center;
+    color: #FF00C8;
+}
+
 label {
+    font-family: "Diatype Semi-Mono", monospace;
     color: #FF00C8;
 }
 
 input, textarea {
-    width: 25rem;
-    margin: .5rem 0 2rem;
-    padding: 1rem .5rem 1rem .5rem;
+    font-family: "Diatype Semi-Mono", monospace;
+    background-color: lightgrey;
+    width: 30rem;
+    max-width: 30rem;
     border: none;
     border-radius: .15rem .15rem .15rem .15rem;
-    background-color: lightgrey;
+    margin: .5rem 0 2rem;
+    padding: 1rem .5rem 1rem .5rem;
+}
+
+button {
+    font-family: 'ABC Diatype Semi-Mono';
+    background-color: #111;
+    color: #FF00C8;
+    border: 1px solid #FF00C8;
+    border-radius: .15rem .15rem .15rem .15rem;    
+    padding: .5rem 1.5rem;
+}
+
+button:hover {
+    opacity: .6;
 }
 
 ::placeholder {
@@ -405,31 +397,10 @@ input, textarea {
     text-decoration: line-through;
 }
 
-button {
-    padding: .5rem 1.5rem;
-    border: 1px solid #FF00C8;
-    border-radius: .15rem .15rem .15rem .15rem;
-    background-color: #111;
-    color: #FF00C8;
-}
-
-button:hover {
-    opacity: .6;
-}
+/*Thank you message*/
 
 form#contactForm {
     color: #FFFEFC;
-}
-
-#hola {
-    display: flex;
-    justify-content: center;
-    color: #FF00C8;
-}
-
-svg.arrow-upper-left {
-    width: clamp(10px,1.75vw,11px);
-    height: auto;
 }
 
 /*Mobile*/
