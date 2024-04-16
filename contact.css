@@ -311,7 +311,6 @@ nav p.small a:nth-child(2) {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding: 5rem 2rem 0 2rem;
 }
 
 p {
@@ -381,6 +380,10 @@ a {
 
 a:hover {
     color: #A5B3F8;
+}
+
+form {
+    padding: 5rem 2rem 0 2rem;
 }
 
 label {
@@ -481,5 +484,9 @@ svg.arrow-upper-left {
 
     nav p.small {
         margin: 1.5rem 0 0 0;
+    }
+
+    form {
+        padding: 5rem 2rem 0 2rem;
     }
 }
