@@ -314,6 +314,7 @@ nav p.small a:nth-child(2) {
 }
 
 p {
+    font-size: clamp(1.031rem,3vw,1.094rem);
     line-height: 1.6;
     margin: 1rem 0 0 0;
 }
@@ -404,7 +405,10 @@ button:hover {
 /*Thank you message*/
 
 form#contactForm {
+    font-family: 'ABC Diatype Semi-Mono', monospace;
+    font-size: clamp(1.031rem,3vw,1.094rem);
     color: #FFFEFC;
+    text-align: center;
 }
 
 /*Mobile*/
