@@ -404,7 +404,7 @@ button:hover {
 
 /*Thank you message*/
 
-form#contactForm {
+.thanks-message {
     font-family: 'ABC Diatype Semi-Mono', monospace;
     font-size: clamp(1.031rem,3vw,1.094rem);
     color: #FFFEFC;
