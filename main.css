@@ -512,7 +512,7 @@ svg.arrow-upper-right {
 /*Mobile*/
 
 @media (max-width: 768px) {
-    .blog {
+    .page {
         display: block;
         height: 100%;
     }
