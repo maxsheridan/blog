@@ -3,7 +3,7 @@
     src: url('/assets/type/ABC_Diatype_Semi-Mono.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     src: url('/assets/type/ABC_Diatype_Semi-Mono_Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     src: url('/assets/type/ABC_Diatype_Mono.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 * {
@@ -48,6 +48,46 @@ body {
     -ms-text-size-adjust: none;
     text-size-adjust: none;
 } 
+
+p {
+    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.031rem,3vw,1.094rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFEFC;
+    line-height: 1.6;
+    margin: 1rem 0 0 0;
+}
+
+h2 {
+    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.49rem,4vw,1.65rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #637CED;
+    line-height: 1.4;
+    margin: 0 0 1.5rem 0;
+}
+
+h3 {
+    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.95rem,4vw,2.2rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFEFC;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'ABC Diatype Semi-Mono Medium', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.58rem,4vw,1.75rem);
+    font-weight: 500;
+    font-style: normal;
+    color: #637CED;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+}
 
 .page {
     display: flex;
@@ -356,46 +396,6 @@ audio {
     margin-top: 2rem;
 }
 
-p {
-    font-family: 'ABC Diatype Semi-Mono', monospace;
-    font-size: clamp(1.031rem,3vw,1.094rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #FFFEFC;
-    line-height: 1.6;
-    margin: 1rem 0 0 0;
-}
-
-h2 {
-    font-family: 'ABC Diatype Semi-Mono', monospace;
-    font-size: clamp(1.49rem,4vw,1.65rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #637CED;
-    line-height: 1.4;
-    margin: 0 0 1.5rem 0;
-}
-
-h3 {
-    font-family: 'ABC Diatype Semi-Mono', monospace;
-    font-size: clamp(1.95rem,4vw,2.2rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #FFFEFC;
-    line-height: 1.2;
-    margin: 0;
-}
-
-h1 {
-    font-family: 'ABC Diatype Semi-Mono Medium', monospace;
-    font-size: clamp(1.58rem,4vw,1.75rem);
-    font-weight: 500;
-    font-style: normal;
-    color: #637CED;
-    line-height: 1.2;
-    margin: 0 0 1.5rem 0;
-}
-
 article:nth-child(n+2) h1 {
     margin-top: 3rem;
 }
@@ -407,7 +407,7 @@ em {
 
 b,
 strong {
-    font-family: 'ABC Diatype Medium', Arial, Helvetica, sans-serif;
+    font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
     font-weight: 500;
 }
 
@@ -452,7 +452,7 @@ hr {
 /*——Special classes*/
 
 p.small {
-    font-family: 'ABC Diatype Semi-Mono Medium', monospace;
+    font-family: 'ABC Diatype Semi-Mono Medium', sans-serif, Helvetica, Arial, system-ui;
     font-size: 1rem;
 }
 

@@ -3,14 +3,14 @@
     src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: optional;
 }
 
 @font-face {
     font-family: 'ABC Diatype Medium';
     src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
     font-style: 500;
-    font-display: swap;
+    font-display: optional;
 }
 
 * {
@@ -65,7 +65,7 @@ main {
 } 
 
 p {
-    font-family: 'ABC Diatype Semi-Mono', monospace;
+    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, system-ui;
     font-size: clamp(1.15rem,3vw,1.3rem);
     font-weight: 400;
     font-style: normal;
@@ -81,7 +81,7 @@ p.small {
 }
 
 h1 {
-    font-family: 'ABC Diatype Medium Semi-Mono', monospace;
+    font-family: 'ABC Diatype Medium Semi-Mono', sans-serif, Helvetica, system-ui;
     font-size: clamp(2.75rem,6vw,3.75rem); 
     font-weight: 500;
     font-style: normal;
