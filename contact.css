@@ -107,6 +107,16 @@ p {
     line-height: 1.6;
 }
 
+h1 {
+    font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.58rem,4vw,1.75rem);
+    font-weight: 500;
+    font-style: normal;
+    color: blue;
+    line-height: 1.2;
+    margin: 3rem 0 1.5rem 0;
+}
+
 a {
     color: blue;
     text-decoration: none;
@@ -125,7 +135,6 @@ form {
 #hola {
     display: flex;
     justify-content: center;
-    color: blue;
 }
 
 label {
