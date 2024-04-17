@@ -67,7 +67,6 @@ nav.title {
     display: flex; 
     justify-content: flex-start; 
     align-items: center; 
-    padding-left: 1.5rem;
 }
 
 nav.links {
@@ -76,7 +75,6 @@ nav.links {
     flex: .6;
     justify-content: flex-end; 
     align-items: center; 
-    padding-right: 1.5rem;
 }
 
 .nav p:first-child {
