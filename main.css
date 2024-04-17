@@ -27,7 +27,7 @@ html {
     scroll-behavior: smooth;
 }
 
-html a {
+html a:hover {
     cursor: url('/assets/graphics/old_school_hover.svg'), auto;
 }
 
@@ -201,8 +201,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    opacity: .7;
+a:any-link:hover {
+    color: blue;
 }
 
 blockquote {
