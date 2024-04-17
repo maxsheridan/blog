@@ -314,10 +314,16 @@ p.all-caps {
     }
 }
 
-svg.arrow-upper-right,
-svg.arrow-upper-left {
+svg.arrow-left {
     width: clamp(10px,1.75vw,11px);
     height: auto;
+    margin-right: .2rem;
+}
+
+svg.arrow-right {
+    width: clamp(10px,1.75vw,11px);
+    height: auto;
+    margin-left: .2rem;
 }
 
 .blink {
