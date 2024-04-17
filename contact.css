@@ -81,8 +81,11 @@ nav.links {
     padding-left: clamp(1rem,3vw,2rem);
 }
 
+.header nav.title {
+    padding-left: clamp(1rem,3vw,2rem);
+}
+
 .nav .logo {
-    margin-left: clamp(1rem,3vw,2rem);
     margin-right: .5rem;
 }
 
