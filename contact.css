@@ -95,7 +95,8 @@ nav.links a.active {
     flex: 1;
     display: flex;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    min-height: 100vh;
 }
 
 p {
@@ -127,7 +128,7 @@ a:hover {
 }
 
 form {
-    padding: 9rem 2rem 0 2rem;
+    padding: 0 2rem 0 2rem;
     width: 100%;
     max-width: 32rem;
 }
@@ -135,6 +136,7 @@ form {
 #hola {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 label {
@@ -177,7 +179,7 @@ button:hover {
 
 /*Thanks message*/
 
-.thanks-message {
+form p {
     font-family: 'ABC Diatype', sans-serif, Helvetica, system-ui;
     font-size: clamp(1.031rem,3vw,1.094rem);
     color: #111;
