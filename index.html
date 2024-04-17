@@ -12,6 +12,7 @@
         <title>Blog - Max Sheridan</title>     
         <link rel="stylesheet" href="/main.css">
         <script src="/linkstyling.js" defer></script>
+        <script src="/lazyloading.js" defer></script>
         <link rel="icon" type="image/x-icon" href="/assets/graphics/ms_blog_favicon.ico">
         <link rel="canonical" href="https://blog.maxsheridan.com">
         <meta name="description" content="My latest news.">
@@ -61,8 +62,8 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <video loading="lazy" width="1280px" height="720px" autoplay loop muted>
-                                <source src="/assets/video/gods_speedboat_teaser.mp4" type="video/mp4">
+                            <video class="lazy" autoplay loop muted playsinline width="1280px" height="720px">
+                                <source data-src="/assets/video/gods_speedboat_teaser.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="text">
@@ -93,8 +94,8 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <video loading="lazy" width="720px" height="720px" autoplay loop muted>
-                                <source src="/assets/video/open_mic_night_unmasked.mp4" type="video/mp4">
+                            <video class="lazy" autoplay loop muted playsinline width="720px" height="720px">
+                                <source data-src="/assets/video/open_mic_night_unmasked.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="text">
@@ -125,8 +126,8 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <video width="650px" height="650px" autoplay loop muted>
-                                <source src="/assets/video/the_city.mp4" type="video/mp4">
+                            <video class="lazy" autoplay loop muted playsinline width="650px" height="650px">
+                                <source data-src="/assets/video/the_city.mp4" type="video/mp4">
                         </div>
                         <div class="text">
                             <h1>The City, About a Post-Apocalyptic Sideshow Freak Who Eats Iron and Shits Out Nails, Finally Sees Print</h1>
@@ -223,7 +224,7 @@
                     <article>
                         <div class="visual">
                             <div class="video-container">
-                                <video loading="lazy" width="888px" height="500px" controls poster="/assets/images/shaved_and_waxed.webp">
+                                <video preload="none" width="888px" height="500px" controls poster="/assets/images/shaved_and_waxed.webp">
                                     <source src="/assets/video/shaved_and_waxed.mp4" type="video/mp4">
                                 </video>
                             </div>
