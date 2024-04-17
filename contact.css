@@ -245,4 +245,8 @@ form p {
         height: 4rem;
         padding: 3.5rem 0;
     }
+
+    .logo {
+        display: none;
+    }
 }

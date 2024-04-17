@@ -393,4 +393,8 @@ svg.arrow-right {
     article:not(:last-of-type)::after {
         height: 4rem;
     }
+
+    .logo {
+        display: none;
+    }
 }
