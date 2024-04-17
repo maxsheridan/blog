@@ -173,7 +173,7 @@ h3 {
 
 h1 {
     font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
-    font-size: clamp(1.58rem,4vw,1.75rem);
+    font-size: clamp(1.49rem,4vw,1.75rem);
     font-weight: 500;
     font-style: normal;
     color: #111;
@@ -270,7 +270,7 @@ hr {
     display: flex; 
     justify-content: flex-start; 
     align-items: center; 
-    width: 50%; 
+    width: 60%; 
     padding-left: 1.5rem;
     }
 
@@ -279,7 +279,7 @@ hr {
     display: flex; 
     justify-content: flex-end; 
     align-items: center; 
-    width: 50%; 
+    width: 40%; 
     padding-right: 1.5rem;
     }
 }
