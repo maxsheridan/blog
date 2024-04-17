@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'ABC Diatype Semi-Mono';
-    src: url('/assets/type/ABC_Diatype_Semi-Mono.woff2') format('woff2');
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: optional;
 }
 
 @font-face {
-    font-family: 'ABC Diatype Semi-Mono Medium';
-    src: url('/assets/type/ABC_Diatype_Semi-Mono_Medium.woff2') format('woff2');
-    font-weight: 500;
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
     font-display: optional;
 }
@@ -27,7 +27,7 @@ html {
     scroll-behavior: smooth;
 }
 
-html a {
+html a:hover, button:hover {
     cursor: url('/assets/graphics/old_school_hover.svg'), auto;
 }
 
@@ -35,326 +35,89 @@ body {
     height: 100vh; 
     height: 100dvh;
     margin: 0;
+    background-color: whitesmoke;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
 } 
 
-p {
-    font-size: clamp(1.031rem,3vw,1.094rem);
-    line-height: 1.6;
-    margin: 1rem 0 0 0;
-}
-
-p.small {
-    font-family: 'ABC Diatype Semi-Mono Medium', sans-serif, Helvetica, system-ui;
-    font-size: 1rem;
-}
-
-h3 {
-    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, system-ui;
-    font-size: clamp(1.95rem,4vw,2.2rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #FFFEFC;
-    line-height: 1.2;
-    margin: 0;
-}
-
-h1 {
-    font-family: 'ABC Diatype Semi-Mono Medium', sans-serif, Helvetica, system-ui;
-    font-size: clamp(1.58rem,4vw,1.75rem);
-    font-weight: 500;
-    font-style: normal;
-    color: #637CED;
-    line-height: 1.2;
-    margin: 0 0 1.5rem 0;
-}
-
 .page {
     display: flex;
     width: 100%;
     height: 100%;
-    background: #111;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border-right: .5px solid grey;
+.header {
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    padding: 0; 
+    border-bottom: 3px solid #111;
+    background-color: whitesmoke;
 }
 
-.title  h3 {
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 0;
-    animation: glitch1 2.5s infinite;
+nav.title {
+    position: relative;
+    flex: .4; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-left: 1.5rem;
 }
 
-.title  h3:nth-child(1) { 
-    color: grey;
+nav.links {
+    position: relative; 
+    display: flex; 
+    flex: .6;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 1.5rem;
 }
 
-.title  h3:nth-child(2) {
-    color: #FF00C8;
-    animation: glitch2 2.5s infinite;
+nav a:nth-child(n+2) {
+    padding-left: .5rem;
 }
 
-.title  h3:nth-child(3) {
-    color: #0008FA;
-    animation: glitch3 2.5s infinite;
-}
-
-@keyframes glitch1 {
-    0% {
-    transform: none;
-    opacity: 1;
-    }
-
-7% {
-    transform: skew(-0.5deg, -0.9deg);
-    opacity: 0.75;
-    }
-
-10% {
-    transform: none;
-    opacity: 1;
-    }
-
-27% {
-    transform: none;
-    opacity: 1;
-    }
-
-30% {
-    transform: skew(0.8deg, -0.1deg);
-    opacity: 0.75;
-    }
-
-35% {
-    transform: none;
-    opacity: 1;
-    }
-
-52% {
-    transform: none;
-    opacity: 1;
-    }
-
-55% {
-    transform: skew(-1deg, 0.2deg);
-    opacity: 0.75;
-    }
-
-50% {
-    transform: none;
-    opacity: 1;
-    }
-
-72% {
-    transform: none;
-    opacity: 1;
-    }
-
-75% {
-    transform: skew(0.4deg, 1deg);
-    opacity: 0.75;
-    }
-
-80% {
-    transform: none;
-    opacity: 1;
-    }
-
-100% {
-    transform: none;
-    opacity: 1;
-    }
-}
-
-@keyframes glitch2 {
-    0% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    7% {
-    transform: translate(-2px, -3px);
-    opacity: 0.5;
-    }
-    
-    10% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    27% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    30% {
-    transform: translate(-5px, -2px);
-    opacity: 0.5;
-    }
-    
-    35% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    52% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    55% {
-    transform: translate(-5px, -1px);
-    opacity: 0.5;
-    }
-    
-    50% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    72% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    75% {
-    transform: translate(-2px, -6px);
-    opacity: 0.5;
-    }
-    
-    80% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    100% {
-    transform: none;
-    opacity: 0.25;
-    }
-}
-
-@keyframes glitch3 {
-    0% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    7% {
-    transform: translate(2px, 3px);
-    opacity: 0.5;
-    }
-    
-    10% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    27% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    30% {
-    transform: translate(5px, 2px);
-    opacity: 0.5;
-    }
-    
-    35% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    52% {
-    transform: none;
-    opacity: 0.25;
-    }
-
-    55% {
-    transform: translate(5px, 1px);
-    opacity: 0.5;
-    }
-    
-    50% {
-    transform: none;
-    opacity: 0.25;
-    }
-
-    72% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    75% {
-    transform: translate(2px, 6px);
-    opacity: 0.5;
-    }
-    
-    80% {
-    transform: none;
-    opacity: 0.25;
-    }
-    
-    100% {
-    transform: none;
-    opacity: 0.25;
-    }
-}
-
-.description {
-    text-align: center;
-    margin-top: 1.25rem;
-}
-
-.description p {
-    font-size: 1rem;
+nav.title a, nav.links a {
+    color: #111;
 }
 
 nav.links a.active {
-    color: #FF00C8;
-}
-
-nav p.small {
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    margin: 2rem 0 0 0;
-}
-
-nav p.small a:nth-child(2) {
-    padding: 0 1.425rem;
+    color: blue;
 }
 
 .content {
     flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
+p {
+    font-family: 'ABC Diatype', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.031rem,3vw,1.094rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #111;
+    line-height: 1.6;
+}
+
 a {
-    color: #637CED;
+    color: blue;
     text-decoration: none;
 }
 
 a:hover {
-    color: #A5B3F8;
+    opacity: .7;
 }
 
 form {
-    padding: 5rem 2rem 0 2rem;
+    padding: 9rem 2rem 0 2rem;
     width: 100%;
     max-width: 32rem;
 }
@@ -362,19 +125,19 @@ form {
 #hola {
     display: flex;
     justify-content: center;
-    color: #FF00C8;
+    color: blue;
 }
 
 label {
-    font-family: "Diatype Semi-Mono", sans-serif, Helvetica, system-ui;
-    color: #FF00C8;
+    font-family: "ABC Diatype", sans-serif, Helvetica, system-ui;
+    color: #111;
     
 }
 
 input, textarea {
-    font-family: "Diatype Semi-Mono", sans-serif, Helvetica, system-ui;
+    font-family: "ABC Diatype", sans-serif, Helvetica, system-ui;
     font-size: .95rem;
-    background-color: lightgrey;
+    background-color: white;
     width: 100%;
     border: none;
     border-radius: .15rem .15rem .15rem .15rem;
@@ -383,17 +146,18 @@ input, textarea {
 }
 
 button {
-    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, system-ui;
+    font-family: 'ABC Diatype Medium', sans-serif, Helvetica, system-ui;
     font-size: .95rem;
-    background-color: #111;
-    color: #FF00C8;
-    border: 1px solid #FF00C8;
+    color: blue;
+    background: whitesmoke;
+    border: 2px solid blue;
     border-radius: .15rem .15rem .15rem .15rem;    
     padding: .5rem 1.5rem;
 }
 
 button:hover {
-    opacity: .6;
+    color: fuchsia;
+    border: 2px solid fuchsia;
 }
 
 ::placeholder {
@@ -402,13 +166,46 @@ button:hover {
     text-decoration: line-through;
 }
 
-/*Thank you message*/
+/*Thanks message*/
 
 .thanks-message {
-    font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, system-ui;
+    font-family: 'ABC Diatype', sans-serif, Helvetica, system-ui;
     font-size: clamp(1.031rem,3vw,1.094rem);
-    color: #FFFEFC;
+    color: #111;
     text-align: center;
+}
+
+.footer {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    padding: 0; 
+    border-top: 3px solid #111;
+    background-color: whitesmoke;
+}
+
+.footer {
+    .title {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 50%; 
+    padding-left: 1.5rem;
+    }
+
+    .copyright {
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 50%; 
+    padding-right: 1.5rem;
+    }
 }
 
 /*Mobile*/
@@ -416,8 +213,7 @@ button:hover {
 @media (max-width: 768px) {
     .page {
         display: block;
-        height: 100vh;
-        height: 100dvh;
+        height: 100%;
     }
 
     header {
@@ -427,35 +223,14 @@ button:hover {
         width: 100%;
         height: 4rem;
         padding: 3.5rem 0;
-        background: #111;
-        border-right: none;
-        border-bottom: .05rem solid grey;
     }
 
-    .logo,
-    .description {
-        display: none;
-    }
-
-    /*Makes blog title flush with top of page on mobile*/
-    .title {
-        margin-top: 1rem;
-    }
-
-    p.small {
-        font-size: .95rem;
-    }
-
-    nav p.small a:nth-child(2) {
-        padding: 0 .8rem;
-    }
-
-
-    nav p.small {
-        margin: 1.5rem 0 0 0;
+    nav a,
+    .footer p {
+        font-size: 1rem;
     }
 
     form {
-        padding: 12rem 1.5rem;
+        padding: 7.5rem 1.5rem;
     }
 }

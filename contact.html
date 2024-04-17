@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
     <head>
         <meta name="robots" content="noindex">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
         <meta name="color-scheme" content="light only">
-        <link rel="preload" as="style" href="/contact.css">
-        <link rel="preload" as="font" href="/assets/type/ABC_Diatype.woff2" type="font/woff2" crossorigin>
-        <link rel="preload" as="font" href="/assets/type/ABC_Diatype_Medium.woff2" type="font/woff2" crossorigin>
-        <link rel="preload" as="image" href="/assets/graphics/old_school_hover.svg"> 
+        <link rel="preload" as="style" href="contact.css">
+        <link rel="preload" as="font" href="assets/type/ABC_Diatype.woff2" type="font/woff2" crossorigin>
+        <link rel="preload" as="font" href="assets/type/ABC_Diatype_Medium.woff2" type="font/woff2" crossorigin>
+        <link rel="preload" as="image" href="assets/graphics/old_school_hover.svg"> 
         <title>Contact - Max Sheridan</title>
-        <link rel="stylesheet" href="/contact.css">
-        <script src="/linkstyling.js" defer></script>
-        <script src="/contact_form.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="/assets/graphics/ms_blog_favicon.ico">
+        <link rel="stylesheet" href="contact.css">
+        <script src="linkstyling.js" defer></script>
+        <script src="contact_form.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="assets/graphics/ms_blog_favicon.ico">
         <link rel="canonical" href="https://blog.maxsheridan.com/contact">
         <meta name="description" content="This is not a spam sewer. And probably you don’t want to talk to me anyway.">
         <meta name="thumbnail" content="https://blog.maxsheridan.com/assets/graphics/ms_share.webp">
@@ -29,21 +29,20 @@
     <body>
         <main>
             <div id="contact" class="page">
-                <header>
+                <div class="header">
                     <nav class="title">
-                        <h3>Max Sheridan</h3>
-                        <h3>Max Sheridan</h3>
-                        <h3>Max Sheridan</h3>
+                        <p>
+                            <a href="/">Max Sheridan</a>
+                        </p>
                     </nav>
                     <nav class="links">
-                        <p class="small">
-                            <a href="https://maxsheridan.com">Website</a>
+                        <p>
+                            <a href="https://www.maxsheridan.com">Website</a>
                             <a href="/">Blog</a>
-                            <a href="/contact" class="active">Contact
-                            </a>
-                        </p>   
-                    </nav>     
-                </header> 
+                            <a href="/contact" class="active">Contact</a>
+                        </p>
+                    </nav>
+                </div>
                 <div class="content">
                     <form id="contactForm" name="contactForm" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSd77W4y_BozhZ_z5f_Bh7ckV6vuqJFw89PwSC48mN67u2HMuQ/formResponse?">
                         <h1 id="hola">Hola</h1><br>
@@ -55,9 +54,17 @@
                         <textarea name="entry.1950049378" id="entry.1950049378" placeholder="I’ve spotted some errors on your website."></textarea><br><br>
                         <button type="submit">Send</button>
                     </form>
-                </div> 
+                </div>
+                <div class="footer">
+                    <div class="title">
+                        <p>Weirdo fiction. MFA-free.</p>                   
+                    </div>
+                    <div class="copyright">
+                        <p>©MS24
+                        </p>
+                    </div>
+                </div>
             </div>
-        </main>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){}"></iframe>
+        </main> 
     </body>
 </html>
