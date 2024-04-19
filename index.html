@@ -12,7 +12,6 @@
         <title>Blog - Max Sheridan</title>     
         <link rel="stylesheet" href="/main.css">
         <script src="/linkstyling.js" defer></script>
-        <script src="/lazyloading.js" defer></script>
         <link rel="icon" type="image/x-icon" href="/assets/graphics/ms_blog_favicon.ico">
         <link rel="canonical" href="https://blog.maxsheridan.com">
         <meta name="description" content="My latest news.">
@@ -95,9 +94,9 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <video class="lazy" autoplay loop muted playsinline poster="/assets/images/open_mic_night_unmasked.webp" width="720px" height="720px">
-                                <source data-src="/assets/video/open_mic_night_unmasked.mp4" type="video/mp4">
-                            </video>
+                            <div class="visual">
+                                <img loading="lazy" src="/assets/images/open_mic_night_unmasked.gif" alt="Mask falling off Open Mic Night logo" width="700px" height="700px">
+                            </div>
                         </div>
                         <div class="text">
                             <h1>Open Mic Night Unmasked</h1>
@@ -127,8 +126,9 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <video class="lazy" autoplay loop muted playsinline poster="/assets/images/the_city.webp" width="650px" height="650px">
-                                <source data-src="/assets/video/the_city.mp4" type="video/mp4">
+                            <div class="visual">
+                                <img loading="lazy" src="/assets/images/the_city.webp" alt="Illustration by Tug Wells" width="700px" height="700px">
+                            </div>
                         </div>
                         <div class="text">
                             <h1>The City, About a Post-Apocalyptic Side&shy;show Freak Who Eats Iron and Shits Out Nails, Finally Sees Print</h1>
