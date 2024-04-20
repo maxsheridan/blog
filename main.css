@@ -206,8 +206,8 @@ em {
 
 b,
 strong {
-    font-family: 'ABC Diatype Bold', sans-serif, Helvetica, Arial, system-ui;
-    font-weight: 600;
+    font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
+    font-weight: 500;
 }
 
 a {
