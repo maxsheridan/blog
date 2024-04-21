@@ -138,8 +138,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    opacity: #4242FF;
+a:any-link:hover {
+    color: #4242FF;
 }
 
 form {
