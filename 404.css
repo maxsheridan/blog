@@ -76,7 +76,7 @@ p {
 
 p.small {
     font-size: clamp(1.04rem,2.7vw,1.17rem);
-    color: blue;
+    color: #4242FF;
 }
 
 h1 {
@@ -90,7 +90,7 @@ h1 {
 }
 
 a {
-    color: blue;
+    color: #4242FF;
     text-decoration: none;
 }
 

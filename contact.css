@@ -102,7 +102,7 @@ nav a {
 }
 
 nav.links a.active {
-    color: blue;
+    color: #4242FF;
 }
 
 .content {
@@ -128,18 +128,18 @@ h1 {
     font-size: clamp(1.49rem,4vw,1.75rem);
     font-weight: 500;
     font-style: normal;
-    color: blue;
+    color: #4242FF;
     line-height: 1.2;
     margin: 3rem 0 1.5rem 0;
 }
 
 a {
-    color: blue;
+    color: #4242FF;
     text-decoration: none;
 }
 
 a:hover {
-    opacity: blue;
+    opacity: #4242FF;
 }
 
 form {
@@ -175,9 +175,9 @@ input, textarea {
 button {
     font-family: 'ABC Diatype Medium', sans-serif, Helvetica, system-ui;
     font-size: .95rem;
-    color: blue;
+    color: #4242FF;
     background: whitesmoke;
-    border: 2px solid blue;
+    border: 2px solid #4242FF;
     border-radius: .15rem .15rem .15rem .15rem;    
     padding: .5rem 1.5rem;
 }
