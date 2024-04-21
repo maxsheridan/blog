@@ -219,6 +219,10 @@ a:any-link:hover {
     color: blue;
 }
 
+article a:hover {
+    box-shadow: inset 0 -10px 0 yellow;
+}
+
 blockquote {
     margin: 2rem auto;
 }
