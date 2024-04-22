@@ -197,7 +197,7 @@ button:hover {
 
 form p {
     font-family: 'ABC Diatype', sans-serif, Helvetica, system-ui;
-    font-size: clamp(1.031rem,3vw,1.094rem);
+    font-size: clamp(1.063rem,3vw,1.125rem);
     color: #111;
     text-align: center;
 }
