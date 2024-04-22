@@ -382,7 +382,7 @@ svg.arrow-right {
         width: 100%;
         max-width: 36rem;
         height: 100%;
-        padding: 4rem 1rem 0 1rem;
+        padding: 4rem 1.25rem 0 1.25rem;
     }
 
     article:first-of-type {
