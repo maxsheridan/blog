@@ -116,7 +116,7 @@ nav.links a.active {
 
 p {
     font-family: 'ABC Diatype', sans-serif, Helvetica, Arial, system-ui;
-    font-size: clamp(1.05rem,3vw,1.125rem);
+    font-size: clamp(1.63rem,3vw,1.125rem);
     font-weight: 400;
     font-style: normal;
     color: #111;
