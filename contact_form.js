@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             });
             
             var thanksMessage = document.createElement("p");
-            thanksMessage.textContent = "Thanks. I'll be in touch.";
+            thanksMessage.textContent = "Thanks. I’ll be in touch.";
             contactForm.insertBefore(thanksMessage, contactForm.firstChild); // Prepend the message
             
             submitted = true;
