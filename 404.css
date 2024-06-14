@@ -31,8 +31,6 @@ html a:hover {
 }
 
 body { 
-    height: 100vh; 
-    height: 100dvh;
     margin: 0;
     background: whitesmoke;
     -webkit-text-size-adjust: none;
@@ -41,29 +39,15 @@ body {
     text-size-adjust: none;
 } 
 
-main {
-    height: 100vh;
-    overflow: hidden;
-}
-
 .page {
     display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
-
-.content {
-    padding: 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-    .content {
-        padding: 1.5rem 1rem;
-    }
-} 
 
 p {
     font-family: 'ABC Diatype Semi-Mono', sans-serif, Helvetica, system-ui;
