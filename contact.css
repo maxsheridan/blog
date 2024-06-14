@@ -32,8 +32,6 @@ html a:hover, button:hover {
 }
 
 body { 
-    height: 100vh; 
-    height: 100dvh;
     margin: 0;
     background-color: whitesmoke;
     -webkit-text-size-adjust: none;
@@ -44,11 +42,44 @@ body {
 
 .page {
     display: flex;
-    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .content {
-    padding: 8rem 3.5rem; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+p {
+    font-family: 'ABC Diatype', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.063rem,3vw,1.125rem);
+    font-weight: 400;
+    font-style: normal;
+    color: #111;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.49rem,4vw,1.75rem);
+    font-weight: 500;
+    font-style: normal;
+    color: #4242FF;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+}
+
+a {
+    color: #4242FF;
+    text-decoration: none;
+}
+
+a:any-link:hover {
+    color: #4242FF;
 }
 
 .header {
@@ -105,43 +136,6 @@ nav a {
 }
 
 nav.links a.active {
-    color: #4242FF;
-}
-
-.content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    min-height: 100dvh;
-}
-
-p {
-    font-family: 'ABC Diatype', sans-serif, Helvetica, Arial, system-ui;
-    font-size: clamp(1.063rem,3vw,1.125rem);
-    font-weight: 400;
-    font-style: normal;
-    color: #111;
-    line-height: 1.6;
-}
-
-h1 {
-    font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
-    font-size: clamp(1.49rem,4vw,1.75rem);
-    font-weight: 500;
-    font-style: normal;
-    color: #4242FF;
-    line-height: 1.2;
-    margin: 3rem 0 1.5rem 0;
-}
-
-a {
-    color: #4242FF;
-    text-decoration: none;
-}
-
-a:any-link:hover {
     color: #4242FF;
 }
 
@@ -240,7 +234,6 @@ form p {
 @media (max-width: 768px) {
     .page {
         display: block;
-        height: 100%;
     }
 
     header {
