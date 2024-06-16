@@ -69,7 +69,7 @@ nav.links {
     align-items: center;
 }
 
-nav a:nth-child(n+2) {
+nav.links a:nth-child(n+2) {
     padding-left: .75rem;
 }
 
