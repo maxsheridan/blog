@@ -69,10 +69,6 @@ nav.links {
     align-items: center;
 }
 
-nav .logo {
-    margin-right: .65rem;
-}
-
 nav a:nth-child(n+2) {
     padding-left: .75rem;
 }
