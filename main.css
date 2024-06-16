@@ -39,7 +39,7 @@ body {
     text-size-adjust: none;
 } 
 
-.header {
+header {
     position: fixed; 
     left: 0; 
     top: 0; 
@@ -256,7 +256,7 @@ hr {
     color: #4242FF;
 }
 
-.footer {
+footer {
     position: fixed; 
     left: 0; 
     bottom: 0; 
@@ -270,7 +270,7 @@ hr {
     padding-right: clamp(1rem,3vw,1.5rem);
 }
 
-.footer .title {
+footer .title {
     position: relative; 
     display: flex; 
     justify-content: flex-start; 
@@ -278,7 +278,7 @@ hr {
     width: 60%; 
 }
 
-.footer .copyright {
+footer .copyright {
     position: relative; 
     display: flex; 
     justify-content: flex-end; 
