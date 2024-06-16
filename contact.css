@@ -37,7 +37,63 @@ body {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
-} 
+}
+
+.header {
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    display: flex; 
+    flex-direction: row;
+    width: 100%; 
+    height: 4rem;  
+    background-color: whitesmoke;
+    border-bottom: 3px solid #111;
+}
+
+nav.title {
+    position: relative;
+    flex: .4; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+nav.links {
+    position: relative; 
+    display: flex; 
+    flex: .6;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.nav p:first-child {
+    padding-left: clamp(1rem,3vw,2rem);
+}
+
+.header nav.title {
+    padding-left: clamp(1rem,3vw,2rem);
+}
+
+.nav .logo {
+    margin-right: .65rem;
+}
+
+.nav p:last-child {
+    padding-right: clamp(1rem,3vw,2rem);
+}
+
+nav a:nth-child(n+2) {
+    padding-left: .5rem;
+}
+
+nav a {
+    color: #111;
+}
+
+nav.links a.active {
+    color: #4242FF;
+}
 
 .page {
     display: flex;
@@ -81,62 +137,6 @@ a:any-link:hover {
     color: #4242FF;
 }
 
-.header {
-    position: fixed; 
-    left: 0; 
-    top: 0; 
-    display: flex; 
-    flex-direction: row;
-    width: 100%; 
-    height: 4rem;  
-    background-color: whitesmoke;
-    border-bottom: 3px solid #111;
-    padding: 0; 
-}
-
-nav.title {
-    position: relative;
-    flex: .4; 
-    display: flex; 
-    justify-content: flex-start; 
-    align-items: center; 
-}
-
-nav.links {
-    position: relative; 
-    display: flex; 
-    flex: .6;
-    justify-content: flex-end; 
-    align-items: center; 
-}
-
-.nav p:first-child {
-    padding-left: clamp(1rem,3vw,2rem);
-}
-
-.header nav.title {
-    padding-left: clamp(1rem,3vw,2rem);
-}
-
-.nav .logo {
-    margin-right: .5rem;
-}
-
-.nav p:last-child {
-    padding-right: clamp(1rem,3vw,2rem);
-}
-
-nav a:nth-child(n+2) {
-    padding-left: .5rem;
-}
-
-nav a {
-    color: #111;
-}
-
-nav.links a.active {
-    color: #4242FF;
-}
 
 form {
     width: 100%;
@@ -194,8 +194,8 @@ button:hover {
 form p {
     font-family: 'ABC Diatype', sans-serif, Helvetica, system-ui;
     font-size: clamp(1.063rem,3vw,1.125rem);
-    color: #111;
     text-align: center;
+    color: #111;
 }
 
 .footer {
@@ -231,15 +231,6 @@ form p {
 @media (max-width: 768px) {
     .page {
         display: block;
-    }
-
-    header {
-        position: fixed;
-        display: flex;
-        top: 0;
-        width: 100%;
-        height: 4rem;
-        padding: 3.5rem 0;
     }
 
     .logo {
