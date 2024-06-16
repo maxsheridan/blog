@@ -53,6 +53,10 @@ body {
     padding-right: clamp(1rem,3vw,1.5rem);
 }
 
+nav svg.logo {
+    margin-right: .65rem;
+}
+
 nav.title {
     position: relative;
     flex: .4; 
