@@ -49,6 +49,8 @@ body {
     height: 4rem;  
     background-color: whitesmoke;
     border-bottom: 3px solid #111;
+    padding-left: clamp(1rem,3vw,1.5rem);
+    padding-right: clamp(1rem,3vw,1.5rem);
 }
 
 nav.title {
@@ -56,7 +58,7 @@ nav.title {
     flex: .4; 
     display: flex; 
     justify-content: flex-start; 
-    align-items: center; 
+    align-items: center;
 }
 
 nav.links {
@@ -64,34 +66,28 @@ nav.links {
     display: flex; 
     flex: .6;
     justify-content: flex-end; 
-    align-items: center; 
+    align-items: center;
 }
 
-.nav p:first-child {
-    padding-left: clamp(1rem,3vw,2rem);
-}
-
-.header nav.title {
-    padding-left: clamp(1rem,3vw,2rem);
-}
-
-.nav .logo {
+nav .logo {
     margin-right: .65rem;
 }
 
-.nav p:last-child {
-    padding-right: clamp(1rem,3vw,2rem);
-}
-
 nav a:nth-child(n+2) {
-    padding-left: .5rem;
+    padding-left: .75rem;
 }
 
 nav a {
+    font-family: 'ABC Diatype', sans-serif, Helvetica, Arial, system-ui;
+    font-size: clamp(1.063rem,3vw,1.125rem);
+    font-weight: 400;
+    font-style: normal;
     color: #111;
+    line-height: 1.6;
 }
 
-nav.links a.active {
+nav:not(.title) a.active,
+nav a:hover {
     color: #4242FF;
 }
 
@@ -106,7 +102,7 @@ nav.links a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8rem 0;
+    padding: 10rem 0;
 }
 
 p {
@@ -141,8 +137,8 @@ a:any-link:hover {
 form {
     width: 100%;
     max-width: 32rem;
-    padding-left: clamp(1rem,3vw,2rem);
-    padding-right: clamp(1rem,3vw,2rem);
+    padding-left: clamp(1rem,3vw,1.5rem);
+    padding-right: clamp(1rem,3vw,1.5rem);
 }
 
 #hola {
@@ -208,6 +204,8 @@ form p {
     height: 4rem;  
     background-color: whitesmoke;
     border-top: 3px solid #111;
+    padding-left: clamp(1rem,3vw,1.5rem);
+    padding-right: clamp(1rem,3vw,1.5rem);
 }
 
 .footer .title {
@@ -231,6 +229,10 @@ form p {
 @media (max-width: 768px) {
     .page {
         display: block;
+    }
+
+    .content {
+        padding: 8rem 0;
     }
 
     .logo {
