@@ -308,7 +308,7 @@ p.all-caps {
 }
 
 svg.coda {
-    width: clamp(24px,1.75vw,26px);
+    width: clamp(24px,2.25vw,26px);
     height: auto;
 }
 
