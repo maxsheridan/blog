@@ -302,6 +302,11 @@ p.all-caps {
     font-family: 'ABC Diatype Medium', sans-serif, Helvetica, Arial, system-ui;
 }
 
+svg.skull {
+    width: clamp(1rem,3vw,1.06rem);
+    height: auto;
+}
+
 .coda {
     text-align: center;
     padding-bottom: 2rem;
