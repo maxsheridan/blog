@@ -106,6 +106,7 @@ nav a:hover {
 }
 
 article {
+    width: 100%;
     max-width: 38rem;
     margin: 0 auto;
     padding: 5rem 1.5rem 0 1.5rem;
@@ -192,6 +193,7 @@ a:any-link:hover {
     height: auto;
     border-radius: .5rem .5rem .5rem .5rem;
     margin: .5rem 0 2.5rem;
+    display: none;
 }
 
 video {
