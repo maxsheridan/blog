@@ -165,6 +165,13 @@ input, textarea {
     padding: 1rem .5rem 1rem .5rem;
 }
 
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 500px;
+}
+
 button {
     font-family: 'ABC Diatype Medium', sans-serif, Helvetica, system-ui;
     font-size: .95rem;
