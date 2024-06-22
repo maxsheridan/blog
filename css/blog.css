@@ -306,6 +306,7 @@ p.all-caps {
 svg.skull {
     width: clamp(1rem,3vw,1.06rem);
     height: auto;
+    vertical-align: -3%;
 }
 
 .coda {
