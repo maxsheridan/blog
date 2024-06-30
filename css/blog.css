@@ -28,7 +28,7 @@ html {
 }
 
 html a:hover {
-    cursor: url('/assets/graphics/old_school_hover.svg'), auto;
+    cursor: url('/assets/graphics/old_school_hover.svg'), auto !important;
 }
 
 body { 
@@ -186,22 +186,13 @@ a:any-link:hover {
 }
 
 .visual img,
-.visual video {
+.visual video:not(.player) {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
     border-radius: .5rem .5rem .5rem .5rem;
     margin: .5rem 0 2.5rem;
-}
-
-video {
-    object-fit: cover;
-}
-
-audio {
-    width: 100%;
-    margin-top: 2rem;
 }
 
 blockquote {

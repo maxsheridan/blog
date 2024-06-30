@@ -11,7 +11,10 @@
         <link rel="preload" as="image" href="/assets/graphics/old_school_hover.svg">  
         <title>Blog - Max Sheridan</title>     
         <link rel="stylesheet" type="text/css" href="/css/blog.css">
+        <link rel="stylesheet" type="text/css" href="/css/av.css">
         <script src="/linkstyling.js" defer></script>
+        <script src="/audioplayer.js" defer></script>
+        <script src="/videoplayer.js" defer></script>
         <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
         <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">
         <link rel="canonical" href="https://blog.maxsheridan.com">
@@ -172,9 +175,8 @@
                         <div class="text">
                             <h1>Florida Man</h1>
                             <p>There’s been a lot of talk about what makes Florida Man more suscep­tible than other American men to committing weird, pointless crimes preserved for posterity by bizarre, frightening mugshots. This song offers a possible answer. (Actually, three possible answers.)</p> 
-                            <audio controls>
-                                <source src="/assets/audio/florida_man.mp3" title="Florida Man by Max Sheridan"  type="audio/mp3">
-                            </audio> 
+                            <div class="essential_audio" data-url="/assets/audio/florida_man.mp3" title="Florida Man by Max Sheridan" data-type="audio/mp3">
+                            </div> 
                             <p class="date">17 Feb 2021</p>     
                         </div>
                     </article>
@@ -213,9 +215,12 @@
                     <article>
                         <div class="visual">
                             <div class="video-container">
-                                <video preload="none" width="888px" height="500px" controls poster="/assets/images/shaved_and_waxed.webp">
-                                    <source src="/assets/video/shaved_and_waxed.mp4" type="video/mp4">
-                                </video>
+                                <div class="video-player">
+                                    <video id="video" class="player" poster="/assets/images/shaved_and_waxed.webp" src="/assets/video/shaved_and_waxed.mp4"></video>
+                                    <div class="progress">
+                                        <input type="range" id="progress" min="0" max="100" value="0" class="play">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="text">
@@ -231,9 +236,8 @@
                         <div class="text">
                             <h1>Press the Button, Kim</h1>
                             <p>I cut this this morning at about 7 a.m. on my couch. The mixing is lousy and I haven’t changed my strings in about two years, but if you can imagine a happier future in which Justin Bieber is bombed to hell, here’s a little song for you. Special thanks to Brady Feutz and Marilena Zackheos, my two onliest fans.</p>
-                            <audio controls>
-                                <source src="/assets/audio/press_the_button_kim.mp3" title="Press the Button, Kim by Max Sheridan"  type="audio/mp3">
-                            </audio>
+                            <div class="essential_audio" data-url="/assets/audio/press_the_button_kim.mp3" title="Press the Button, Kim by Max Sheridan" data-type="audio/mp3">
+                            </div> 
                             <p class="date">21 Mar 2019</p>     
                         </div>
                     </article>
