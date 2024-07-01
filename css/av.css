@@ -5,6 +5,7 @@
 
 div.essential_audio > div:nth-child(1) div.off,
 div.essential_audio > div:nth-child(1) div.play,
+div.essential_audio > div:nth-child(1) div.load,
 .play-pause, 
 .progress input::-webkit-slider-thumb,
 .progress input::-moz-range-thumb  {
