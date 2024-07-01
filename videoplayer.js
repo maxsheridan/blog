@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const video = document.getElementById('video');
     const progressBar = document.getElementById('progress');
+    const playPauseButton = document.getElementById('play-pause');
 
     video.addEventListener('timeupdate', () => {
         const progress = (video.currentTime / video.duration) * 100;
@@ -12,25 +13,40 @@ document.addEventListener('DOMContentLoaded', () => {
         video.currentTime = seekTime;
     });
 
-    progressBar.addEventListener('click', () => {
+    progressBar.addEventListener('change', () => {
+        if (video.paused) {
+            video.pause();
+        }
+    });
+
+    playPauseButton.addEventListener('click', () => {
         if (video.paused) {
             video.play();
-            progressBar.classList.remove('play');
-            progressBar.classList.add('pause');
         } else {
             video.pause();
-            progressBar.classList.remove('pause');
-            progressBar.classList.add('play');
         }
     });
 
     video.addEventListener('play', () => {
-        progressBar.classList.remove('play');
-        progressBar.classList.add('pause');
+        playPauseButton.classList.remove('play');
+        playPauseButton.classList.add('pause');
     });
 
     video.addEventListener('pause', () => {
-        progressBar.classList.remove('pause');
-        progressBar.classList.add('play');
+        playPauseButton.classList.remove('pause');
+        playPauseButton.classList.add('play');
+    });
+
+    // Handle touch events for mobile
+    progressBar.addEventListener('touchstart', (e) => {
+        const touch = e.touches[0];
+        const seekTime = ((touch.clientX - progressBar.getBoundingClientRect().left) / progressBar.offsetWidth) * video.duration;
+        video.currentTime = seekTime;
+    });
+
+    progressBar.addEventListener('touchmove', (e) => {
+        const touch = e.touches[0];
+        const seekTime = ((touch.clientX - progressBar.getBoundingClientRect().left) / progressBar.offsetWidth) * video.duration;
+        video.currentTime = seekTime;
     });
 });
