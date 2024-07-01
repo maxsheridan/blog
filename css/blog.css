@@ -199,6 +199,10 @@ blockquote {
     margin: 2rem auto;
 }
 
+blockquote.audio {
+    margin: 2rem auto 2.5rem;
+}
+
 blockquote h2 {
     font-size: clamp(1.1rem,3vw,1.2rem); 
     text-transform: uppercase;
@@ -280,6 +284,10 @@ footer .copyright {
 }
 
 /*——Special classes*/
+
+.recording-info {
+    margin-top: 2rem;
+}
 
 p.small {
     font-size: 1rem;
