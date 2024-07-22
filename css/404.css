@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'ABC Diatype';
+    src: url('/assets/type/ABC_Diatype.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Diatype Medium';
+    src: url('/assets/type/ABC_Diatype_Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+html {
+    font-size: 16px;
+        cursor: url('/assets/graphics/old_school_point.svg'), auto;
+}
+    
+html a:hover {
+        cursor: url('/assets/graphics/old_school_hover.svg'), auto;
+}
+
+body { 
+    background-color: whitesmoke;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+} 
+
+.page {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    min-height: 100vh;
+    min-height: 100dvh; 
+}
+
+p {
+    font-family: 'ABC Diatype', Helvetica, Arial, sans-serif;
+    font-size: clamp(1.15rem,3vw,1.3rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    color: #111;
+    margin: 1rem 0;
+}
+
+p.small {
+    font-size: clamp(1.04rem,2.7vw,1.17rem);
+    color: #4242FF;
+}
+
+h1 {
+    font-family: 'ABC Diatype Medium', Helvetica, Arial, sans-serif;
+    font-size: clamp(2.75rem,6vw,3.75rem); 
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.2;
+    color: #111;
+    margin: 1rem 0;
+}
+
+a {
+    color: #4242FF;
+    text-decoration: none;
+}
+
+svg.arrow-right {
+    width: clamp(11.5px,1.75vw,12.5px);
+    height: auto;
+    margin-left: .2rem;
+}
+
+.blink {
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0%, 15% {
+        opacity: 0;
+    }
+    16%, 100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0%, 15% {
+        opacity: 0;
+    }
+    16%, 100% {
+        opacity: 1;
+    }
+}
