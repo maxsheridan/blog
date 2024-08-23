@@ -18,9 +18,9 @@
     --primary-color: whitesmoke;
     --secondary-color: #39FF14;
     --tertiary-color: yellow;
-    --body-font: 'ABC Diatype', sans-serif;
+    --body-font: 'ABC Diatype', Helvetica, Arial, sans-serif;
     --body-font-size: clamp(1.1rem,3vw,1.2rem);
-    --heading-font: 'ABC Diatype Medium', sans-serif;
+    --heading-font: 'ABC Diatype Medium', Helvetica, Arial, sans-serif;
 }
 
 * {
