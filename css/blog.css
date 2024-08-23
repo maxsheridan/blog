@@ -37,12 +37,12 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/old_school_point.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/point.svg') 5 -5, auto;
     scroll-behavior: smooth;
 }
 
 html a:hover {
-    cursor: url('/assets/graphics/old_school_hover.svg') 5 -5, auto;
+    cursor: url('/assets/graphics/hover.svg') 5 -5, auto;
 }
 
 body { 
