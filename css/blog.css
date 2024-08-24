@@ -247,7 +247,8 @@ hr {
 }
 
 footer {
-    display: flex; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     position: fixed; 
     left: 0; 
@@ -260,17 +261,8 @@ footer {
 }
 
 footer .title {
-    display: inherit; 
-    justify-content: flex-start; 
-    position: relative;  
-    width: 60%; 
-}
-
-footer .copyright {
-    display: inherit; 
-    justify-content: flex-end; 
-    position: relative;  
-    width: 40%;
+    display: inherit;
+    flex: .6;
 }
 
 footer p {
