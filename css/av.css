@@ -1,6 +1,6 @@
 .progress,
 .progress input {
-	cursor: url('/assets/graphics/old_school_point.svg'), auto !important;
+	cursor: url('/assets/graphics/point.svg'), auto !important;
 }
 
 div.essential_audio > div:nth-child(1) div.off,
@@ -9,7 +9,7 @@ div.essential_audio > div:nth-child(1) div.load,
 .play-pause, 
 .progress input::-webkit-slider-thumb,
 .progress input::-moz-range-thumb  {
-	cursor: url('/assets/graphics/old_school_hover.svg'), auto !important;
+	cursor: url('/assets/graphics/hover.svg'), auto !important;
 }
 
 /********** Essential Audio Player 2.1 CSS **********/
