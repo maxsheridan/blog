@@ -54,6 +54,7 @@ body {
 
 header {
     display: flex; 
+    justify-content: space-between;
     align-items: center;
     position: fixed; 
     left: 0; 
@@ -67,23 +68,9 @@ header {
 }
 
 nav svg.logo {
-    margin-right: .65rem;
-    width: 24px;
+    width: clamp(24px, 3vw, 26px);
     height: auto;
-}
-
-nav.title {
-    display: inherit; 
-    flex: .4;
-    justify-content: flex-start; 
-    position: relative; 
-}
-
-nav.links {
-    display: inherit; 
-    flex: .6;
-    justify-content: flex-end; 
-    position: relative; 
+    margin: 0 .65rem -.15rem 0;
 }
 
 nav.links a:nth-child(n+2) {
