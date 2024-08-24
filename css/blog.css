@@ -64,7 +64,7 @@ header {
     height: 4rem;
     padding-right: clamp(1rem,3vw,1.5rem);
     padding-left: clamp(1rem,3vw,1.5rem);
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 nav svg.logo {
