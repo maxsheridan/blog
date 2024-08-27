@@ -7,18 +7,18 @@
         <meta name="color-scheme" content="light only">
         <link rel="preload" as="font" href="/assets/type/ABC_Diatype.woff2" type="font/woff2" crossorigin=”anonymous”>
         <link rel="preload" as="font" href="/assets/type/ABC_Diatype_Medium.woff2" type="font/woff2" crossorigin=”anonymous”>
-        <link rel="preload" as="image" href="/assets/graphics/hover.svg">
-        <link rel="preload" as="image" href="/assets/images/frenzied_leap.webp">  
+        <link rel="preload" as="image" href="/assets/images/frenzied_leap.webp" type="image/webp" fetchpriority="high">
+        <link rel="preload" as="image" href="/assets/graphics/hover.svg" type="image/svg+xml">  
         <title>Blog - Max Sheridan</title>     
-        <link rel="stylesheet" type="text/css" href="/css/blog.css?ver=2">
-        <link rel="stylesheet" type="text/css" href="/css/av.css">
+        <link rel="stylesheet" href="/css/blog.css?ver=2" type="text/css">
+        <link rel="stylesheet" href="/css/av.css" type="text/css">
         <script src="/js/linkstyling.js" defer></script>
         <script src="/js/audioplayer.js" defer></script>
         <script src="/js/videoplayer.js" defer></script>
-        <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico">
-        <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon.svg">
-        <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png">
-        <link rel="manifest" href="/manifest.json">
+        <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="any" href="/favicon.svg" type="image/svg+xml" >
+        <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
+        <link rel="manifest" as="fetch" href="/manifest.json" type="application/json">
         <link rel="canonical" href="https://blog.maxsheridan.com/page2">
         <meta name="description" content="My latest news.">
         <meta name="thumbnail" content="https://blog.maxsheridan.com/assets/graphics/share.webp">
@@ -46,7 +46,7 @@
                 <div class="content">
                     <article>
                         <div class="visual">
-                            <img src="/assets/images/frenzied_leap.webp" alt="Collage by Tug Wells" width="700px" height="466px">
+                            <img src="/assets/images/frenzied_leap.webp" alt="Collage featuring a man jumping by Tug Wells" width="700px" height="466px"  fetchpriority="high" loading="eager">
                         </div>
                         <div class="text">
                             <h1>Frenzied Leap into the Abyss of Our Collective Hopes</h1>
@@ -56,7 +56,7 @@
                     </article>
                     <article id="i-knew">
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/i_knew.webp" alt="Collage by Tug Wells" width="700px" height="431px">
+                            <img src="/assets/images/i_knew.webp" alt="Collage featuring a chicken breast and monarch butterflies by Tug Wells" width="700px" height="431px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>I Knew</h1>
@@ -68,7 +68,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/turd_ferguson.webp" alt="" width="700px" height="466px">
+                            <img src="/assets/images/turd_ferguson.webp" alt="Burt Reynolds vector graphic" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Farewell, Gator</h1>
@@ -84,7 +84,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/pyongyang_style.webp" alt="" width="700px" height="350px">
+                            <img src="/assets/images/pyongyang_style.webp" alt="Kim Jong Un posing for the camera while his people starve" width="700px" height="350px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Pyongyang Style</h1>
@@ -94,7 +94,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/the_cage_collection.webp" alt="" width="700px" height="466px">
+                            <img src="/assets/images/the_cage_collection.webp" alt="Painting featuring a sad man that looks like Nic Cage" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>The Cage Collection</h1>
@@ -111,7 +111,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/writers_house.webp" alt="" width="700px" height="466px">
+                            <img src="/assets/images/writers_house.webp" alt="Graphic for writing workshop" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>WriterHouse Writing Workshops</h1>
@@ -123,7 +123,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/trash.webp" alt="Richard Spencer Is Trash" width="1000px" height="1332px">
+                            <img src="/assets/images/trash.webp" alt="Richard Spencer looking like a smug piece of shit" width="1000px" height="1332px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Trash</h1>
@@ -133,7 +133,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/shia_labeouf_eagle_rider.webp" alt="Shia LaBeouf Eagle Rider" width="700px" height="490px">
+                            <img src="/assets/images/shia_labeouf_eagle_rider.webp" alt="Shia LaBeouf giving a high-octane motivational speech" width="700px" height="490px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Shia LaBeouf Eagle Rider</h1>
@@ -153,7 +153,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/maximum_thrust.webp" alt="" width="700px" height="">
+                            <img src="/assets/images/maximum_thrust.webp" alt="Smug Vladimir Putin with an erection in the shape of a rocket ship which Donald Trump inspects" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Maximum Thrust</h1>
@@ -163,7 +163,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/the_bad_sister.webp" alt="The Bad Sister" width="700px" height="466px">
+                            <img src="/assets/images/the_bad_sister.webp" alt="Graphic for my new erotic Siamese twin novel The Bad Sister" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>The Bad Sister: A Hipster Erotic Thriller</h1>
@@ -203,7 +203,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/the_herat_handshake.webp" alt="Switchblade Magazine Issue 4" width="700px" height="1163px">
+                            <img src="/assets/images/the_herat_handshake.webp" alt="Switchblade Magazine Issue 4" width="700px" height="1163px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>The Herat Handshake in Switchblade Issue 4</h1>
@@ -216,7 +216,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/dillo_in_owkzine.webp" alt="Dillo text from Owkzine" width="700px" height="466px">
+                            <img src="/assets/images/dillo_in_owkzine.webp" alt="Excerpt from my novel Dillo featured in Owkzine" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Dillo in OWK Zine</h1>
@@ -227,7 +227,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/dillo_is_here.webp" alt="Dillo books for book launch" width="1200px" height="800px">
+                            <img src="/assets/images/dillo_is_here.webp" alt="Pile of paperback books for Dillo book launch" width="1200px" height="800px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Dillo is Here!</h1>
@@ -246,7 +246,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/space_is_the_final_frontier.webp" alt="Illustration by Tug Wells" width="700px" height="466px">
+                            <img src="/assets/images/space_is_the_final_frontier.webp" alt="Photo illustration of John Kennedy at Cape Canaveral by Tug Wells" width="700px" height="466px" loading="lazy" >
                         </div>
                         <div class="text">
                             <h1>Space is the Final Frontier in The Café Irreal</h1>
@@ -272,7 +272,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/shape_shifting_bizarro_tiki_porn_death_trip.webp" alt="Freaks That Carry Your Luggage Up to Your Room by Will Viharo" width="868px" height="1393px">
+                            <img src="/assets/images/shape_shifting_bizarro_tiki_porn_death_trip.webp" alt="Cover of Freaks That Carry Your Luggage Up to Your Room by Will Viharo" width="868px" height="1393px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Shapeshifting Bizarro Tiki Porn Death Trip: Inside the Very Warped Mind of Will Viharo</h1>
@@ -298,7 +298,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/the_paul_lee_covey_experience.webp" alt="Crimespree Magazine #64" width="780px" height="1010px">
+                            <img src="/assets/images/the_paul_lee_covey_experience.webp" alt="Crimespree Magazine #64" width="780px" height="1010px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>The Paul Lee Covey Experience</h1>
@@ -308,7 +308,7 @@
                     </article>
                     <article id="why">
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/why.webp" alt="Max Sheridan reading at Prozank Kafeneio" width="800px" height="1200px">
+                            <img src="/assets/images/why.webp" alt="Max Sheridan reading at Prozank Kafeneio" width="800px" height="1200px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Why?</h1>
@@ -329,7 +329,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/lost_and_found.webp" alt="Collage for Lost and Found" width="700px" height="466px">
+                            <img src="/assets/images/lost_and_found.webp" alt="Cut-out collage for my story Lost and Found" width="700px" height="466px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Lost and Found</h1>
@@ -339,7 +339,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/a_kindness.webp" alt="" width="700px" height="">
+                            <img src="/assets/images/a_kindness.webp" alt="Photograph of a man in dark parking lot digitally manipulated" width="700px" height="666px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>A Kindness in Spinetingler Magazine</h1>
@@ -353,7 +353,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/mud_hustler.webp" alt="Mud Hustler in Hobart Pulp" width="700px" height="465px">
+                            <img src="/assets/images/mud_hustler.webp" alt="Mud Hustler in Hobart Pulp" width="700px" height="465px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Mud Hustler, A Dirty Story, Comes to Hobart Pulp</h1>
@@ -365,7 +365,7 @@
                     </article>
                     <article>
                         <div class="visual">
-                            <img loading="lazy" src="/assets/images/pawned.webp" alt="Crime Factory Issue 17" width="710px" height="1000px">
+                            <img src="/assets/images/pawned.webp" alt="Crime Factory Issue 17" width="710px" height="1000px" loading="lazy">
                         </div>
                         <div class="text">
                             <h1>Pawned in Crime Factory Issue 17</h1>
