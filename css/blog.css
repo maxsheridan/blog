@@ -15,12 +15,14 @@
 }
 
 :root {
-    --primary-color: #111;
-    --secondary-color: #4242FF;
-    --tertiary-color: yellow;
+    --padding-x: clamp(1rem,3vw,1.5rem);
+    --padding-y: 2rem;
     --body-font: 'ABC Diatype', Helvetica, Arial, sans-serif;
     --body-font-size: clamp(1.063rem,3vw,1.125rem);
     --heading-font: 'ABC Diatype Medium', Helvetica, Arial, sans-serif;
+    --primary-color: #111;
+    --secondary-color: #4242FF;
+    --tertiary-color: yellow;
     --background-color: whitesmoke;
 }
 
@@ -61,9 +63,8 @@ header {
     top: 0; 
     z-index: 4;  
     width: 100%; 
-    height: 4rem;
-    padding-right: clamp(1rem,3vw,1.5rem);
-    padding-left: clamp(1rem,3vw,1.5rem);
+    height: 4.5rem;
+    padding: var(--padding-y) var(--padding-x); 
     border-bottom: 2px solid var(--primary-color);
     background-color: var(--background-color);
 }
@@ -255,9 +256,8 @@ footer {
     left: 0; 
     bottom: 0; 
     width: 100%; 
-    height: 4rem;
-    padding-right: clamp(1rem,3vw,1.5rem);
-    padding-left: clamp(1rem,3vw,1.5rem);  
+    height: 4.5rem;
+    padding: var(--padding-y) var(--padding-x); 
     border-top: 2px solid var(--primary-color);
     background-color: var(--background-color);
 }
@@ -265,6 +265,12 @@ footer {
 footer .title {
     display: inherit;
     flex: .6;
+}
+
+footer .copyright {
+    display: inherit;
+    justify-content: flex-end;
+    flex: .4;
 }
 
 footer p {
