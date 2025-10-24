@@ -5,7 +5,7 @@ date: 2025-10-22
 category: Teaching
 ---
 
-I was 25 when I read Dylan Thomas’ **Lament Poem** to a room of amateur poets at one of their monthly gatherings in Urbana-Champaign, Illinois.
+I was 25 when I read Dylan Thomas’ **Lament Poem** to a room of amateur poets at one of their monthly gatherings in Champaign, Illinois.
 
 As Dylan Thomas.
 
