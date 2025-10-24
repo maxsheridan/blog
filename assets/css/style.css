@@ -38,7 +38,7 @@
   --body: 'Hex Franklin Narrow',system-ui, sans-serif;
   --micro: 'Big Shoulders 18', system-ui, sans-serif;
   --heading: 'Big Shoulders 36', system-ui, sans-serif;
-  --paragraph: calc(1.05rem + .5vw);
+  --paragraph: calc(1.1rem + .5vw);
   --primary: #161718;
   --accent: #8D8C8C;
   --background: #EDECE4;
@@ -139,7 +139,7 @@ a {
 }
 
 strong {
-  font-variation-settings: "wdth" 85, "wght" 550;
+  font-variation-settings: "wdth" 95, "wght" 550;
 }
 
 article a:not(.category a):not(.post-navigation a) {
