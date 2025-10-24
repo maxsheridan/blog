@@ -105,7 +105,7 @@ main {
 h1 {
   font-family: var(--heading);
   font-size: calc(var(--paragraph) * 2.7);  
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
@@ -115,7 +115,7 @@ h1 {
 
 h2 {
   font-size: calc(var(--paragraph) * 1.5);
-  line-height: 1.2
+  line-height: 1.2;
 }
 
 p.big {
