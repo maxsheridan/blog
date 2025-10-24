@@ -438,6 +438,12 @@ class BlogBuilder:
                 shutil.copy2(cand, self.output_dir / 'favicon.svg')
                 break
     
+    def build_cname(self):
+        """Create CNAME file for GitHub Pages custom domain"""
+        cname_path = self.output_dir / 'CNAME'
+        with open(cname_path, 'w', encoding='utf-8') as f:
+            f.write('blog.maxsheridan.com')
+    
     def build(self):
         """Main build process"""
         print("🔨 Starting build...\n")
@@ -452,6 +458,7 @@ class BlogBuilder:
         self.build_pages()
         self.build_rss()
         self.build_sitemap()
+        self.build_cname()
         
         print("\n✨ Build complete!")
         print(f"📁 Output directory: {self.output_dir}")
