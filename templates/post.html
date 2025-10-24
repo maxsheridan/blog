@@ -9,6 +9,9 @@
 <a href="/category-{{ post.category|slugify }}.html">{{ post.category }}</a>
 </p>
 <h1>{{ post.title }}</h1>
+{% if post.subtitle %}
+<p class="subtitle">{{ post.subtitle }}</p>
+{% endif %}
 </div>
 <div class="post-content">
 {{ post.content|safe }}

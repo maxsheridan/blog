@@ -80,6 +80,7 @@ class BlogBuilder:
             
             post = {
                 'title': frontmatter.get('title', 'Untitled'),
+                'subtitle': frontmatter.get('subtitle', ''),
                 'date': frontmatter.get('date', ''),
                 'category': frontmatter.get('category', 'Uncategorized'),
                 'content': html_content,
