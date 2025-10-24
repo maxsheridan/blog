@@ -188,11 +188,9 @@ ul.index-list {
 }
 
 .arrow-up-rgt {
-  display: inline-block;
   width: auto;
-  height: calc(var(--paragraph) * 3.7);
-  vertical-align: text-top;
-  transform: translateX(-20%);
+  height: calc(var(--paragraph) * 2.15);
+  margin-left: .15rem;
 }
 
 hr {
