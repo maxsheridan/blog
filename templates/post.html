@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }} - This Is A Blog{% endblock %}
+{% block content %}
+<main class="article">
+<article>
+<div class="post-intro">
+<p class="date">{{ post.date|format_date }}</p>
+<p class="category">
+<a href="/category-{{ post.category|slugify }}.html">{{ post.category }}</a>
+</p>
+<h1>{{ post.title }}</h1>
+</div>
+<div class="post-content">
+{{ post.content|safe }}
+</div>
+<div class="post-navigation margins-off">
+{% if prev_post -%}
+<a class="prev" href="{{ prev_post.url }}">← {{ prev_post.title }}</a>
+{% endif -%}
+{% if next_post -%}
+<a class="next" href="{{ next_post.url }}">{{ next_post.title }} →</a>
+{% endif -%}
+</div>
+</article>
+</main>
+{% endblock %}

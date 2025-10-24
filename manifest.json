@@ -1,0 +1,23 @@
+{
+    "name": "This Is A Blog",
+    "short_name": "Blog",
+    "description": "Where I write, think, and ramble, but mostly ramble.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#4B3C42",
+    "theme_color": "#4B3C42",
+    "icons": [
+        {
+            "src": "/assets/icons/icon_192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icons/icon_512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ]
+}

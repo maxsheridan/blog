@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{% if title != 'Home' %}{{ title }} - {% endif %}This Is A Blog{% endblock %}
+{% block content %}
+<main>
+<p class="index-intro big">
+{{ intro }}
+</p>
+<ul class="index-list">
+{% for post in posts -%}
+<li>
+<div class="link">
+<a href="{{ post.url }}">{{ post.title }}<svg class="arrow-up-rgt" viewBox="0 0 256 256"><path fill="none" d="M0 0h256v256H0z"/><path fill="none" stroke="currentColor" stroke-width="16" d="M64 192 192 64M88 64h104v104"/></svg></a>
+</div>
+<div class="meta">
+<span class="date">{{ post.date|format_date }}</span>
+<span class="category">
+<a href="/category-{{ post.category|slugify }}.html">{{ post.category }}</a>
+</span>
+</div>
+</li>
+{% endfor -%}
+</ul>
+<div class="pagination">
+{% if pagination.total > 1 -%}
+{% if pagination.has_prev -%}
+<a href="{{ pagination.prev_url }}">← Previous</a>
+{% endif -%}
+<span>Page {{ pagination.current }} of {{ pagination.total }}</span>
+{% if pagination.has_next -%}
+<a href="{{ pagination.next_url }}">Next →</a>
+{% endif -%}
+{% endif -%}
+</div>
+</main>
+{% endblock %}

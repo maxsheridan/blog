@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<link rel="preload" href="/assets/type/bigshoulders_36pt_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/assets/type/bigshoulders_18pt_bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" >
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
+<link rel="manifest" href="/manifest.json" type="application/json">
+<meta name="thumbnail" content="https://maxsheridan.com/assets/graphics/share.webp">
+<meta property="og:site_name" content="This Is A Blog">
+<meta property="og:title" content="{{ page_title|default('This Is A Blog') }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
+<meta property="og:image" content="https://blog.maxsheridan.com/assets/graphics/share.webp">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<link rel="canonical" href="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
+<title>{% block title %}{{ page_title|default('This Is A Blog') }}{% endblock %}</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header>
+<div class="site-title">
+<a href="/colophon.html">This Is A Blog</a>
+</div>
+<nav class="margins-off">
+<a href="https://maxsheridan.com">Website</a>
+<hr>
+<a id="copyLink" onclick="copyEmail()">Email</a>
+</nav>
+</header>
+{% block content %}{% endblock %}
+<footer>
+<a href="/colophon.html">Colophon</a>
+<hr>
+<p>&copy; {{ current_year }} Max Sheridan</p>
+</footer>
+<script>
+function copyEmail() {navigator.clipboard.writeText('your@email.com'); alert('Email copied to clipboard!');}
+</script>
+</body>
+</html>
