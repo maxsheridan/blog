@@ -9,7 +9,7 @@
 {% for post in posts -%}
 <li>
 <div class="link">
-<a href="{{ post.url }}">{{ post.title }}<svg class="arrow-up-rgt" viewBox="0 0 256 256"><path fill="none" d="M0 0h256v256H0z"/><path fill="none" stroke="currentColor" stroke-width="16" d="M64 192 192 64M88 64h104v104"/></svg></a>
+<a href="{{ post.url }}"><span>{{ post.title }}<svg class="arrow-up-rgt" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="16" d="M32,1.778l-0,23.11c-0,0.975 -0.802,1.778 -1.778,1.778c-0.975,-0 -1.777,-0.803 -1.777,-1.778l-0,-18.819l-25.409,25.41c-0.333,0.333 -0.786,0.521 -1.257,0.521c-0.976,-0 -1.779,-0.803 -1.779,-1.779c-0,-0.471 0.188,-0.924 0.521,-1.257l25.41,-25.409l-18.819,0c-0.975,0 -1.778,-0.802 -1.778,-1.777c0,-0.976 0.803,-1.778 1.778,-1.778l23.11,0c0.976,0 1.778,0.802 1.778,1.778Z"/></svg></span></a>
 </div>
 <div class="meta">
 <span class="date">{{ post.date|format_date }}</span>

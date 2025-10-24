@@ -104,7 +104,7 @@ main {
 .site-title a,
 h1 {
   font-family: var(--heading);
-  font-size: calc(var(--paragraph) * 2.5);  
+  font-size: calc(var(--paragraph) * 2.7);  
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -179,21 +179,20 @@ ul.index-list {
   border-top: 2px dotted var(--primary);
 }
 
-.index-list .link a {
-  display: flex;
-  align-items: center;
-}
-
 .index-list .link > a {
   font-family: var(--heading);
-  font-size: calc(var(--paragraph) * 2.5);
+  font-size: calc(var(--paragraph) * 2.7);
   text-transform: uppercase;
+  line-height: 1.1;
   color: var(--primary);
 }
 
 .arrow-up-rgt {
+  display: inline-block;
   width: auto;
-  height: calc(var(--paragraph) * 3.5);
+  height: calc(var(--paragraph) * 3.7);
+  vertical-align: text-top;
+  transform: translateX(-20%);
 }
 
 hr {
@@ -205,7 +204,7 @@ hr {
 .meta {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   font-size: calc(var(--paragraph) *.8);
   font-variation-settings: "wdth" 80, "wght" 450;
   text-transform: uppercase;
