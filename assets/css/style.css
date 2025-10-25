@@ -211,7 +211,7 @@ hr {
 article {
   display: flex;
   flex-direction: column;
-  max-width: 56ch;
+  max-width: 51ch;
   margin: 0 auto;
 }
 
