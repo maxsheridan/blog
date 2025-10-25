@@ -189,17 +189,17 @@ class BlogBuilder:
                     'total': len(pages),
                     'has_prev': page_num > 1,
                     'has_next': page_num < len(pages),
-                    'prev_url': f'/category-{category_slug}.html' if page_num == 2 else f'/category-{category_slug}-page-{page_num - 1}.html',
-                    'next_url': f'/category-{category_slug}-page-{page_num + 1}.html'
+                    'prev_url': f'/category-{category_slug}/' if page_num == 2 else f'/category-{category_slug}-page-{page_num - 1}/',
+                    'next_url': f'/category-{category_slug}-page-{page_num + 1}/'
                 }
                 
                 # Determine page title and canonical URL
                 if page_num == 1:
                     page_title = f"{category} - This Is A Blog"
-                    canonical_url = f"{self.site_url}/category-{category_slug}.html"
+                    canonical_url = f"{self.site_url}/category-{category_slug}/"
                 else:
                     page_title = f"{category} - Page {page_num} - This Is A Blog"
-                    canonical_url = f"{self.site_url}/category-{category_slug}-page-{page_num}.html"
+                    canonical_url = f"{self.site_url}/category-{category_slug}-page-{page_num}/"
                 
                 html = template.render(
                     intro=f"Posts in {category}",
@@ -212,10 +212,11 @@ class BlogBuilder:
                 )
                 
                 if page_num == 1:
-                    output_file = self.output_dir / f'category-{category_slug}.html'
+                    output_file = self.output_dir / f'category-{category_slug}' / 'index.html'
                 else:
-                    output_file = self.output_dir / f'category-{category_slug}-page-{page_num}.html'
+                    output_file = self.output_dir / f'category-{category_slug}-page-{page_num}' / 'index.html'
                 
+                output_file.parent.mkdir(parents=True, exist_ok=True)
                 with open(output_file, 'w', encoding='utf-8') as f:
                     f.write(self.indent_html(html))
                 total += 1
@@ -380,7 +381,7 @@ class BlogBuilder:
         for category in self.categories.keys():
             category_slug = self.slugify(category)
             url = SubElement(urlset, 'url')
-            SubElement(url, 'loc').text = f"{self.site_url}/category-{category_slug}.html"
+            SubElement(url, 'loc').text = f"{self.site_url}/category-{category_slug}/"
             SubElement(url, 'lastmod').text = datetime.now().strftime('%Y-%m-%d')
             SubElement(url, 'priority').text = '0.6'
             SubElement(url, 'changefreq').text = 'weekly'

@@ -6,7 +6,7 @@
 <div class="post-intro">
 <p class="date">{{ post.date|format_date }}</p>
 <p class="category">
-<a href="/category-{{ post.category|slugify }}.html">{{ post.category }}</a>
+<a href="/category-{{ post.category|slugify }}/">{{ post.category }}</a>
 </p>
 <h1>{{ post.title }}</h1>
 {% if post.subtitle %}
