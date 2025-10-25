@@ -255,7 +255,7 @@ footer {
 }
 
 main.article + footer {
-  max-width: 56ch;
+  max-width: 50ch;
   margin: 0 auto;
 }
 
