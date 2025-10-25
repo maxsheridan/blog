@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block title %}{% if title != 'Home' %}{{ title }} - {% endif %}This Is A Blog{% endblock %}
+{% block site_title %}<h1><a class="site-title" href="/">This Is A Blog</a></h1>{% endblock %}
 {% block content %}
 <main>
-<h1 class="vh">This Is A Blog</h1>
 <p class="index-intro big">
 {{ intro }}
 </p>

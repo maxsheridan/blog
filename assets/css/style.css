@@ -101,7 +101,7 @@ main {
   padding: calc(var(--gap) * 4) 0;
 }
 
-.site-title a,
+.site-title,
 h1 {
   font-family: var(--heading);
   font-size: calc(var(--paragraph) * 2.7);  
