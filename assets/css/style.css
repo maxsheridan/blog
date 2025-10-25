@@ -89,7 +89,7 @@ body {
   padding: var(--big-gap) 1rem;
   font-family: var(--body);
   font-size: var(--paragraph);
-  font-variation-settings: "wdth" 90, "wght" 400;
+  font-variation-settings: "wdth" 90, "wght" 425;
   line-height: 1.5;
   color: var(--primary);
   background-color: var(--background);
@@ -261,4 +261,26 @@ main.article + footer {
 
 .center {
   text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(var(--primary));
+}
+
+.skip-link:focus {
+  top: 6px;
+  color: rgb(var(--primary));
+}
+
+.vh {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
