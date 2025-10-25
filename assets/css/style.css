@@ -263,6 +263,13 @@ main.article + footer {
   text-align: center;
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .skip-link {
   position: absolute;
   top: -999px;
