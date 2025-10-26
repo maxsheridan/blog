@@ -12,7 +12,7 @@ git init
 git add -A
 git commit -m "Deploy site - $(date '+%Y-%m-%d %H:%M:%S')"
 git branch -M gh-pages
-git remote add origin https://github.com/maxsheridan/blog.git 2>/dev/null || git remote set-url origin https://github.com/maxsheridan/blog.git
+git remote add origin git@github.com:maxsheridan/blog.git 2>/dev/null || git remote set-url origin git@github.com:maxsheridan/blog.git
 git push -f origin gh-pages
 cd ..
 
