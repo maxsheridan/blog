@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }} - This Is A Blog{% endblock %}
 {% block content %}
-<main class="article">
+<main id="main" class="article" tabindex="-1">
 <article>
 {% if page.title %}
 <h1>{{ page.title }}</h1>

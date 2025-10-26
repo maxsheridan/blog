@@ -40,6 +40,7 @@
   --heading: 'Big Shoulders 36', system-ui, sans-serif;
   --paragraph: calc(1.1rem + .5vw);
   --primary: #161718;
+  --highlight: #0000FF;
   --accent: #8D8C8C;
   --background: #EDECE4;
 }
@@ -47,12 +48,8 @@
 @media(prefers-color-scheme:dark) {
   :root {
   --primary: #D3CEC1;
+  --highlight: #50ADD7;
   --background: #161718;
-  }
-
-  :focus-visible {
-  outline: 3px solid rgb(var(--highlight));
-  outline-offset: 2px;
   }
 }
 
@@ -67,6 +64,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  list-style: none;
   background: none;
   overscroll-behavior: none;
 }
@@ -122,14 +120,42 @@ p.big {
   font-size: calc(var(--paragraph) * 1.25);
 }
 
-nav {
+nav ul  {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.separator {
+  flex: 1;
+}
+
+.separator::before {
+  display: block;
+  border-top: 2px dotted var(--primary);
+  content: "";
+}
+
 #copyLink {
+  font: inherit;
+  line-height: normal;
+  color: inherit;
+  text-decoration: none;
   cursor: pointer;
+}
+
+button, 
+[role="button"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--highlight);
+  outline-offset: 3px;
+  border-radius: .25rem;
 }
 
 a {
@@ -221,6 +247,10 @@ article {
   border-top: 2px dotted var(--primary);
   border-bottom: 2px dotted var(--primary);
   content: "";
+}
+
+.post-intro * + * {
+  margin-block-start: 1.5rem;
 }
 
 .post-intro .category {

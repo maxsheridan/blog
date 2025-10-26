@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ post.title }} - This Is A Blog{% endblock %}
 {% block content %}
-<main class="article">
+<main id="main" class="article" tabindex="-1">
 <article>
 <div class="post-intro">
 <p class="date">{{ post.date|format_date }}</p>
@@ -16,14 +16,14 @@
 <div class="post-content">
 {{ post.content|safe }}
 </div>
-<div class="post-navigation margins-off">
+<nav class="post-navigation margins-off" aria-label="Post navigation">
 {% if prev_post -%}
-<a class="prev" href="{{ prev_post.url }}">← {{ prev_post.title }}</a>
+	<a class="prev" href="{{ prev_post.url }}" rel="prev" aria-label="Previous post: {{ prev_post.title }}">← {{ prev_post.title }}</a>
 {% endif -%}
 {% if next_post -%}
-<a class="next" href="{{ next_post.url }}">{{ next_post.title }} →</a>
+	<a class="next" href="{{ next_post.url }}" rel="next" aria-label="Next post: {{ next_post.title }}">{{ next_post.title }} →</a>
 {% endif -%}
-</div>
+</nav>
 </article>
 </main>
 {% endblock %}

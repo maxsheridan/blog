@@ -40,6 +40,8 @@ class BlogBuilder:
         """Convert YYYY-MM-DD to 'Oct 23, 2025' format"""
         date_obj = datetime.strptime(date_str, '%Y-%m-%d')
         return date_obj.strftime('%b %d, %Y')
+
+    
     
     def slugify(self, text):
         """Convert text to URL-friendly slug"""

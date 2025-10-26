@@ -29,19 +29,26 @@
 </head>
 <body>
 <header>
+<a class="skip-link" href="#main">Skip to main content</a>
 {% block site_title %}<a class="site-title" href="/">This Is A Blog</a>{% endblock %}
-{# Leave extra space for conditional block #}
+{# Leave blank line here #}
 
-<nav class="margins-off">
-<a href="https://maxsheridan.com">Website</a>
-<hr>
-<a id="copyLink" onclick="copyEmail()">Email</a>
+<nav aria-label="Links" class="margins-off">
+<ul>
+<li>
+<a aria-label="Max Sheridan main website" href="https://maxsheridan.com">Website</a>
+</li>
+<li class="separator" aria-hidden="true"></li>
+<li>
+<button aria-label="Copy email address" id="copyLink" type="button" onclick="copyEmail()">Email</button>
+</li>
+</ul>
 </nav>
 </header>
 {% block content %}{% endblock %}
-<footer>
+<footer aria-label="Footer info">
 <a href="/colophon">Colophon</a>
-<hr>
+<hr aria-hidden="true">
 <p>&copy; {{ current_year }} Max Sheridan</p>
 </footer>
 <script>
