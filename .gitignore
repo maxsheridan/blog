@@ -12,6 +12,7 @@ __pycache__/
 
 # Generated output (can rebuild with build.py)
 public/
+!public/feed.xsl
 
 # VS Code workspace settings
 .vscode/
