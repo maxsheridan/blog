@@ -24,7 +24,7 @@
                 </header>
                 <main id="main" tabindex="-1">
                     <h1>RSS</h1>
-                    <p class="index-intro big">This is an old-school RSS feed. Paste the URL in your browser into your feed reader and you’re set. Or click on a link to read my latest updates. </p>
+                    <p class="index-intro big">This is an old-school RSS feed. Paste the URL in your browser into your feed reader and you’re set. Or click on a link to read my latest posts.</p>
                     <ul class="index-list">
                         <xsl:for-each select="/rss/channel/item">
                             <li>
