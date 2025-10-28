@@ -118,7 +118,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.index-intro {
+.index-intro p {
+  max-width: 52ch;
   margin-block-end: var(--medium-gap);
 }
 
