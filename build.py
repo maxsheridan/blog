@@ -9,6 +9,15 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 
 class BlogBuilder:
+    def copy_feed_xsl(self):
+        """Copy feed.xsl from assets to public folder"""
+        src = self.assets_dir / 'feed.xsl'
+        dst = self.output_dir / 'feed.xsl'
+        if src.exists():
+            shutil.copy2(src, dst)
+            print(f"Copied {src} to {dst}")
+        else:
+            print(f"Warning: {src} does not exist. Skipping feed.xsl copy.")
     def __init__(self):
         self.root = Path(__file__).parent
         self.content_dir = self.root / 'content'
@@ -16,6 +25,7 @@ class BlogBuilder:
         self.output_dir = self.root / 'public'
         self.posts_dir = self.content_dir / 'posts'
         self.pages_dir = self.content_dir / 'pages'
+        self.assets_dir = self.root / 'assets'
         
         # Configuration
         self.posts_per_page = 10
@@ -464,6 +474,7 @@ class BlogBuilder:
         self.build_sitemap()
         self.build_cname()
         
+        self.copy_feed_xsl()
         print("\n✨ Build complete!")
         print(f"📁 Output directory: {self.output_dir}")
         print(f"📡 RSS feed: {self.output_dir}/feed.xml")
