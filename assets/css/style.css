@@ -118,8 +118,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.index-intro p {
-  max-width: 52ch;
+.index-intro {
+  max-width: 48ch;
   margin-block-end: var(--medium-gap);
 }
 
@@ -170,7 +170,8 @@ button:focus-visible,
   border-radius: .25rem;
 }
 
-a {
+a,
+button {
   text-decoration: none;
   color: rgb(var(--primary));
   transition: opacity 0.2s ease;
@@ -189,7 +190,8 @@ article a:not(.category a):not(.post-navigation a) {
 }
 
 @media (hover:hover) and (pointer:fine) {
-  a:hover {
+  a:hover,
+  button:hover {
       opacity: .6;
   }
 }
