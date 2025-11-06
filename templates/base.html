@@ -14,6 +14,8 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
 <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
 <link rel="manifest" href="/manifest.json" type="application/json">
+<link rel="canonical" href="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
+<title>{% block title %}{{ page_title|default('This Is A Blog') }}{% endblock %}</title>
 <meta name="thumbnail" content="https://maxsheridan.com/assets/graphics/share.webp">
 <meta property="og:site_name" content="This Is A Blog">
 <meta property="og:title" content="{{ page_title|default('This Is A Blog') }}">
@@ -23,9 +25,6 @@
 <meta property="og:image:type" content="image/webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="800">
-<link rel="canonical" href="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
-<title>{% block title %}{{ page_title|default('This Is A Blog') }}{% endblock %}</title>
-<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <header>
