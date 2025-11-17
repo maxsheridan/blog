@@ -38,7 +38,7 @@
   --body: 'Hex Franklin Narrow',system-ui, sans-serif;
   --micro: 'Big Shoulders 18', system-ui, sans-serif;
   --heading: 'Big Shoulders 36', system-ui, sans-serif;
-  --paragraph: calc(1.1rem + .5vw);
+  --paragraph: calc(1.09rem + .5vw);
   --primary: #161718;
   --highlight: #0000FF;
   --accent: #8D8C8C;
@@ -95,7 +95,7 @@ body {
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: var(--big-gap) 1rem;
+  padding: var(--big-gap) 2rem;
   font-family: var(--body);
   font-size: var(--paragraph);
   font-variation-settings: "wdth" 90, "wght" 425;
