@@ -111,7 +111,7 @@ main {
 .site-title,
 h1 {
   font-family: var(--heading);
-  font-size: calc(var(--paragraph) * 3);  
+  font-size: calc(var(--paragraph) * 2.8);  
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -231,7 +231,7 @@ ul.index-list {
 
 .index-list .link > a {
   font-family: var(--heading);
-  font-size: calc(var(--paragraph) * 3);
+  font-size: calc(var(--paragraph) * 2.8);
   text-transform: uppercase;
   line-height: 1.1;
   color: var(--primary);
