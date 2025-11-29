@@ -32,9 +32,15 @@
 }
 
 :root {
-  --gap: 1.25rem;
-  --medium-gap: calc(var(--gap) * 2);
-  --big-gap: calc(var(--gap) * 3);
+  --ratio: 1.5;
+  --space--3: calc(var(--space--2) / var(--ratio));
+  --space--2: calc(var(--space--1) / var(--ratio));
+  --space--1: calc(var(--space-0) / var(--ratio));
+  --space-0: 1rem;
+  --space-1: calc(var(--space-0) * var(--ratio));
+  --space-2: calc(var(--space-1) * var(--ratio));
+  --space-3: calc(var(--space-2) * var(--ratio));
+  --space-4: calc(var(--space-3) * var(--ratio));
   --body: 'Hex Franklin Narrow',system-ui, sans-serif;
   --micro: 'Big Shoulders 18', system-ui, sans-serif;
   --heading: 'Big Shoulders 36', system-ui, sans-serif;
@@ -69,14 +75,6 @@
   overscroll-behavior: none;
 }
 
-article * + * {
-  margin-block-start: var(--gap);
-}
-
-.margins-off > * {
-  margin-block-start: 0
-}
-
 html {
   font-size: 16px; 
   text-size-adjust:none;
@@ -95,7 +93,7 @@ body {
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: var(--big-gap) 2rem;
+  padding: var(--space-3) 2rem;
   font-family: var(--body);
   font-size: var(--paragraph);
   font-variation-settings: "wdth" 90, "wght" 425;
@@ -107,20 +105,20 @@ body {
 main {
   flex: 1;
   width: 100%;
-  padding: calc(var(--gap) * 4) 0;
+  padding: var(--space-4) 0;
 }
 
 .site-title,
 h1 {
   font-family: var(--heading);
-  font-size: calc(var(--paragraph) * 2.7);  
-  line-height: 1.1;
+  font-size: calc(var(--paragraph) * 3);  
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
 .index-intro {
   max-width: 48ch;
-  margin-block-end: var(--medium-gap);
+  margin-block-end: var(--space-2);
 }
 
 h2 {
@@ -136,6 +134,7 @@ nav ul  {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--space--3);
 }
 
 .separator {
@@ -177,10 +176,6 @@ button {
   transition: opacity 0.2s ease;
 }
 
-strong {
-  font-variation-settings: "wdth" 95, "wght" 550;
-}
-
 article a:not(.category a):not(.post-navigation a) {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -196,6 +191,21 @@ article a:not(.category a):not(.post-navigation a) {
   }
 }
 
+.center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+strong {
+  font-variation-settings: "wdth" 95, "wght" 550;
+}
+
 ul.index-list {
   display: flex;
   flex-direction: column;
@@ -209,9 +219,9 @@ ul.index-list {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--medium-gap);
+  gap: var(--space-2);
   width: 100%;
-  padding: 2rem 0;
+  padding: var(--space-2) 0;
   border-bottom: 2px dotted var(--primary);
 }
 
@@ -221,15 +231,15 @@ ul.index-list {
 
 .index-list .link > a {
   font-family: var(--heading);
-  font-size: calc(var(--paragraph) * 2.7);
+  font-size: calc(var(--paragraph) * 3);
   text-transform: uppercase;
   line-height: 1.1;
   color: var(--primary);
 }
 
 .arrow-up-rgt {
-  width: auto;
-  height: calc(var(--paragraph) * 2.15);
+  width: .8em;
+  height: auto;
   margin-left: .15rem;
 }
 
@@ -243,7 +253,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: calc(var(--paragraph) *.8);
+  font-size: calc(var(--paragraph) *.85);
   font-variation-settings: "wdth" 80, "wght" 450;
   text-transform: uppercase;
 }
@@ -257,14 +267,19 @@ article {
 
 .post-intro {
   display: block;
-  padding: var(--medium-gap) 0;
+  padding: var(--space-3) 0;
   border-top: 2px dotted var(--primary);
   border-bottom: 2px dotted var(--primary);
   content: "";
 }
 
-.post-intro * + * {
-  margin-block-start: 1.5rem;
+.post-intro >  * + *,
+.post-content > * + * {
+  margin-block-start: var(--space-1);
+}
+
+.margins-off > * {
+  margin-block-start: 0
 }
 
 .post-intro .category {
@@ -278,8 +293,8 @@ article {
 }
 
 .post-content {
-  margin-block-start: var(--big-gap);
-  margin-block-end: var(--big-gap);
+  margin-block-start: var(--space-3);
+  margin-block-end: var(--space-3);
 }
 
 .post-navigation {
@@ -295,23 +310,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: var(--space--3);
   width: 100%;
 }
 
 main.article + footer {
   max-width: 50ch;
   margin: 0 auto;
-}
-
-.center {
-  text-align: center;
-}
-
-.flex-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .skip-link {
