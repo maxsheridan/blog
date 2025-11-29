@@ -10,4 +10,4 @@ title: Colophon
     Type is Big Shoulders Display for headings and Hex Franklin Variable for everything else.
 
     The title of this page, Colphon, is just to annoy you.
-<div>
+</div>
