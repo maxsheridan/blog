@@ -273,8 +273,7 @@ article {
   content: "";
 }
 
-.post-intro >  * + *,
-.post-content > * + * {
+article div > * + *   {
   margin-block-start: var(--space-1);
 }
 
