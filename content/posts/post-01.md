@@ -55,9 +55,9 @@ Teaching people how to write stories isn’t about teaching people how to be cre
 
 When I reached the point in my life where I had to choose between trying to make a life in Cyprus or heading back to the States, my wife and I (we had two little Cypriot-Americans by then) had just spent a week in San Francisco. The creative landscape is obviously completely different there. The Bay Area was the birthplace of the Beats and is still an epicenter for writers and writing and is where a number of my writing acquaintances live. It’s a place where literary things happen.
 
-It was partly that trip that inspired me to open Write CY, a creative writing space in Old Nicosia dedicated to community storytelling. I’d decided that if I was going to stay here in Nicosia, I’d at least need to do something related to writing for a living. 
+It was partly that trip that inspired me to open Write CY, a creative writing space in Old Nicosia dedicated to community storytelling. 
 
-If we didn’t have Open Mic Nights, I’d try to get them going. If we didn’t have Noir at the Bar, we could eventually aspire to it. If teens and children needed alternative venues for exercising creativity (while they still had it), we’d give it to them. 
+I’d decided that if I was going to stay here in Nicosia, I’d at least need to do something related to writing for a living. If we didn’t have Open Mic Nights, I’d try to get them going. If we didn’t have Noir at the Bar, we could eventually aspire to it. If teens and children needed alternative venues for exercising creativity (while they still had it), we’d give it to them. 
 
 And if adults wanted to have a place where they could get some guidance from professionals about how to approach the very difficult task of writing a story that someone would want to read — they’d get it.
 
