@@ -2,7 +2,7 @@
 title:
 ---
 
-<div class="article">
+<div>
     <h1>Colophon</h1>
     <p>This site was built with the <a href="https://weirdbubba.maxsheridan.com">Weird Bubba Hyperstatic Website Generator,</a> a lightweight SSG for sale only in “dark” pharmacies in Cuba.</p>
     <p>It lives on GitHub Pages.</p>
