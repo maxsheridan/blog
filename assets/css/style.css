@@ -113,7 +113,7 @@ main {
 h1 {
   font-family: var(--heading);
   font-size: var(--heading-1);  
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
