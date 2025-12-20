@@ -32,11 +32,11 @@
 }
 
 :root {
-  --ratio: 1.6;
+  --ratio: 1.5;
+  --space-0: calc(1rem + .5vw);
   --space--3: calc(var(--space--2) / var(--ratio));
   --space--2: calc(var(--space--1) / var(--ratio));
   --space--1: calc(var(--space-0) / var(--ratio));
-  --space-0: 1rem;
   --space-1: calc(var(--space-0) * var(--ratio));
   --space-2: calc(var(--space-1) * var(--ratio));
   --space-3: calc(var(--space-2) * var(--ratio));
@@ -94,7 +94,7 @@ body {
   align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: var(--space-2) 2rem;
+  padding: var(--space-1) 2rem;
   font-family: var(--body);
   font-size: var(--paragraph);
   font-variation-settings: "wdth" 90, "wght" 425;
@@ -106,7 +106,7 @@ body {
 main {
   flex: 1;
   width: 100%;
-  padding: calc(var(--space-3) + 2.75vw) 0;
+  padding: var(--space-4)  0;
 }
 
 .site-title,
