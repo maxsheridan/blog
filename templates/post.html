@@ -16,7 +16,7 @@
 <div class="post-content">
 {{ post.content|safe }}
 </div>
-<nav class="post-navigation margins-off" aria-label="Post navigation">
+<nav class="post-navigation" aria-label="Post navigation">
 {% if prev_post -%}
 	<a class="prev" href="{{ prev_post.url }}" rel="prev" aria-label="Previous post: {{ prev_post.title }}">← {{ prev_post.title }}</a>
 {% endif -%}

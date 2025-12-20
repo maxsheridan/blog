@@ -117,18 +117,9 @@ h1 {
   text-transform: uppercase;
 }
 
-.index-intro {
-  max-width: 48ch;
-  margin-block-end: var(--space-2);
-}
-
 h2 {
   font-size: calc(var(--paragraph) * 1.5);
   line-height: 1.2;
-}
-
-p.big {
-  font-size: calc(var(--paragraph) * 1.25);
 }
 
 nav ul  {
@@ -136,6 +127,7 @@ nav ul  {
   justify-content: space-between;
   align-items: center;
   gap: var(--space--3);
+  margin-block-start: var(--space--2);
 }
 
 .separator {
@@ -146,6 +138,15 @@ nav ul  {
   display: block;
   border-top: 2px dotted var(--primary);
   content: "";
+}
+
+.index-intro {
+  max-width: 48ch;
+  margin-block-end: var(--space-2);
+}
+
+p.big {
+  font-size: calc(var(--paragraph) * 1.25);
 }
 
 #copyLink {
@@ -175,14 +176,6 @@ button {
   text-decoration: none;
   color: rgb(var(--primary));
   transition: opacity 0.2s ease;
-}
-
-article a:not(.category a):not(.post-navigation a) {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--accent);
-  text-underline-offset: 2px;
-  text-decoration-skip-ink: all;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -259,6 +252,14 @@ hr {
   text-transform: uppercase;
 }
 
+article div > * + *   {
+  margin-block-start: var(--space-1);
+}
+
+.margins-off > * {
+  margin-block-start: 0
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -274,12 +275,12 @@ article {
   content: "";
 }
 
-article div > * + *   {
-  margin-block-start: var(--space-1);
-}
-
-.margins-off > * {
-  margin-block-start: 0
+article a:not(.category a):not(.post-navigation a) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: all;
 }
 
 .post-intro .category {
