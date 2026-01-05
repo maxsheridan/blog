@@ -14,10 +14,10 @@
 </div>
 <ul class="meta">
 <li>
-<time datetime="2025-10-22">Oct 22, 2025</time>
+<time datetime="{{ post.date }}">{{ post.date | format_date }}</time>
 </li>
 <li>
-<a href="/category-teaching/">Teaching</a>
+<a href="/category-{{ post.category | slugify }}/">{{ post.category }}</a>
 </li>
 </ul>
 </li>
