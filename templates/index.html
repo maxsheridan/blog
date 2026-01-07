@@ -10,15 +10,7 @@
 {% for post in posts -%}
 <li>
 <div class="link">
-<a href="{{ post.url }}">
-    <span class="list-item">{{ post.title }}
-        <svg class="arrow-up-rgt" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor">
-            <path d="M0 37.07 36.9.16l2.94 2.93L2.94 40z"/>
-            <path d="M35.85 0H40v31.14h-4.15z"/>
-            <path d="M8.87 0H40v4.15H8.87z"/>
-        </svg>
-    </span>
-</a>
+<a href="{{ post.url }}"><span class="list-item">{{ post.title }}<svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M0 37.07 36.9.16l2.94 2.93L2.94 40z"/><path d="M35.85 0H40v31.14h-4.15z"/><path d="M8.87 0H40v4.15H8.87z"/></svg></span></a>
 </div>
 <ul class="meta">
 <li>
@@ -34,11 +26,11 @@
 <div class="pagination">
 {% if pagination.total > 1 -%}
 {% if pagination.has_prev -%}
-<a href="{{ pagination.prev_url }}">← Previous</a>
+<a href="{{ pagination.prev_url }}"><svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M40 37.07 3.1.16.16 3.09 37.06 40z"/><path d="M4.15 0H0v31.14h4.15z"/><path d="M31.13 0H0v4.15h31.13z"/></svg>Previous</a>
 {% endif -%}
 <span>Page {{ pagination.current }} of {{ pagination.total }}</span>
 {% if pagination.has_next -%}
-<a href="{{ pagination.next_url }}">Next →</a>
+<a href="{{ pagination.next_url }}">Next<svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M0 37.07 36.9.16l2.94 2.93L2.94 40z"/><path d="M35.85 0H40v31.14h-4.15z"/><path d="M8.87 0H40v4.15H8.87z"/></svg></a>
 {% endif -%}
 {% endif -%}
 </div>

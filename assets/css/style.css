@@ -231,11 +231,7 @@ strong {
   color: var(--primary);
 }
 
-.list-item {
-  display: flex;
-}
-
-.arrow-up-rgt {
+.arrow {
   width: .8em;
   height: auto;
 }
@@ -308,11 +304,6 @@ article a:not(.category a):not(.post-navigation a) {
   font-family: var(--display);
   text-transform: uppercase;
   margin: 0;
-}
-
-.prev,
-.next {
-  display: flex;
 }
 
 footer {
