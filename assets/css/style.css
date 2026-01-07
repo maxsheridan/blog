@@ -233,13 +233,11 @@ strong {
 
 .list-item {
   display: flex;
-  gap: 0;
 }
 
 .arrow-up-rgt {
   width: .8em;
   height: auto;
-  margin-left: .15rem;
 }
 
 hr {
