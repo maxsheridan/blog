@@ -14,7 +14,7 @@
                 <header>
                     <a class="skip-link" href="#main">Skip to main content</a>
                     <a class="site-title" href="/">This Is A Blog</a>
-                    <nav aria-label="Links" class="margins-off">
+                    <nav aria-label="Links">
                         <ul>
                             <li><a aria-label="Max Sheridan main website" href="https://maxsheridan.com">Website</a></li>
                             <li class="separator" aria-hidden="true"></li>

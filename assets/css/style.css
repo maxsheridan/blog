@@ -255,10 +255,6 @@ article div > * + *   {
   margin-block-start: var(--space-1);
 }
 
-.margins-off > * {
-  margin-block-start: 0
-}
-
 article {
   display: flex;
   flex-direction: column;
