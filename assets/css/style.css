@@ -246,7 +246,6 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: calc(var(--paragraph) *.9);
   font-variation-settings: "wdth" 80, "wght" 450;
   text-transform: uppercase;
 }
