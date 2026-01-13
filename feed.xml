@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="feed.xsl"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>This Is A Blog</title>
+    <link>https://blog.maxsheridan.com</link>
+    <description>Where I write, think, and ramble, but mostly ramble.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Jan 2026 19:18:04 +0000</lastBuildDate>
+    <atom:link href="https://blog.maxsheridan.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Please, No More Personal Websites</title>
+      <link>https://blog.maxsheridan.com/posts/post-02/</link>
+      <guid isPermaLink="true">https://blog.maxsheridan.com/posts/post-02/</guid>
+      <description>&lt;p&gt;Back before the pandemic, when I was running a writing agency, I once ordered five blog articles for $1.99 on a lark. The idea was I’d pay for the slop and write an article about the experience — as a warning to anyone considering doing the same for their business.&lt;/p&gt;
+&lt;p&gt;I spent half my waking hours trying to convince project managers and potential clients that good writing was worth paying for back then, that their voices were as important as their websites. As I’m no longer running the agency, you can see who won that battle.&lt;/p&gt;
+&lt;p&gt;We survived COVID and it’s 2022 and the same project managers who’d never really come around to the idea of paying for writing can have ChatGPT write a hundred articles for nothing. Or anything else: a video script, an onboarding email, a whole website for nada. Hot days.&lt;/p&gt;
+&lt;p&gt;But I was no longer a copywriting evangelist in 2022. I’d moved on. The outfit I was writing for at the time had planted a firm flag in the slop when the spigot had just started dripping. They wouldn’t do AI, they said. Like many of us, they slapped it up on their website for everyone to see.&lt;/p&gt;
+&lt;p&gt;That lasted a year or two — until their human garbage (I was writing about home security) started to get its ass kicked, whether by a tide of faceless, remorseless, self-propagating LLM garbage, or by Google’s AI overviews, I’ve never been sure.&lt;/p&gt;
+&lt;p&gt;I’m not saying I refused to polish AI slop for forty bucks an hour. I was just very bad at it. Me and the company, we went our separate ways.&lt;/p&gt;
+&lt;p&gt;Now, in 2026, I’m beginning to think the last decent copywriting gig may have gone the way of Mark Zuckerberg’s metaverse, or the dodo.&lt;/p&gt;
+&lt;p&gt;All that is to say, I have skin in this game.&lt;/p&gt;
+&lt;p&gt;And yet, as a writer who spends shamefully large chunks of his free time tinkering with HTML and CSS, I need to say this: please, no more essays by developers lamenting AI slop. No more battle cries to build personal websites as if that’s the antidote to the enshittification of the web.&lt;/p&gt;
+&lt;p&gt;Friends, like the clogged toilet of Silicon Valley from which all the truly nasty shit is flowing, I’m clogged with “think pieces” and hacktivism lamenting a technology very few, if any, of us really understand, promising a rosier future on VS Code.&lt;/p&gt;
+&lt;p&gt;You should feel this way, too. I’ll tell you why.&lt;/p&gt;
+&lt;h3&gt;It’s trite&lt;/h3&gt;
+&lt;p&gt;I’m tired of other humans telling me to beware the slop.&lt;/p&gt;
+&lt;p&gt;The slop sucks. The slop is terrifying and may put me out of a job. The slop is also perpetuating some very horrible power imbalances on other humans. Read Kate Crawford’s awesome &lt;a href="https://katecrawford.net/atlas"&gt;Atlas of AI&lt;/a&gt; if you haven’t. &lt;/p&gt;
+&lt;p&gt;But slapping a “made by humans” badge up on your website and linking it to a webring of more human websites is doing less than you need to combat the slop, if you need to do something.&lt;/p&gt;
+&lt;p&gt;You’re a human. Fine. So are the underpaid Turkers in Bangalore sowing LLM metadata like piecework. &lt;/p&gt;
+&lt;p&gt;So is the Black woman whose face Gemini can’t identify. &lt;/p&gt;
+&lt;p&gt;If your activism ends with being a human, maybe think a little deeper on the subject. Because, not to be too cynical, the digital pieceworkers in Bangalore probably aren’t losing too much sleep over fueling the beast that put a writer in Sweden (that’s me) out of a job. Nor would I want them to.&lt;/p&gt;
+&lt;h3&gt;You’re preaching to the choir&lt;/h3&gt;
+&lt;p&gt;Obvious, right? But we already believe you. We’re suffering with you. I get why you’d feel compelled to espouse your humanity at a time like this. I even almost get why you’d construct &lt;a href="https://henry.codes/writing/a-website-to-destroy-all-websites/?utm_source=the-index&amp;amp;utm_medium=newsletter"&gt;an elaborate mini-website&lt;/a&gt; to do that. But a pretty site enjoining visitors to throw off the chains of capitalism to... build a personal website?&lt;/p&gt;
+&lt;p&gt;As far as I remember, from the embarrassingly many times I failed to convince people to pay me to write for them, those unconvinced cheapos were my audience, not the hack sitting next to me at the bar not getting paid. I might have lamented the state of the industry to that guy, but when it was time to sound the clarion and publish an article that actually said something, I turned the trumpet in the other direction.&lt;/p&gt;
+&lt;h3&gt;This isn’t samizdat&lt;/h3&gt;
+&lt;p&gt;I lived in Prague for three years in my twenties, where I spent almost all of my time at bars. Sometimes I brought books along. At one of those bars I met a former dissident who noticed my copy of Joseph Skvorecky’s &lt;strong&gt;The Engineer of Human Souls&lt;/strong&gt;, a 600-page book that took me a few weeks to read.&lt;/p&gt;
+&lt;p&gt;This guy told me back in the days of samizdat, when the Soviets banned books like Texans, a single copy of Skvorecky’s outlawed book made it back through the Iron Curtain from Canada, where Skvorecky had emigrated. Readers lucky enough to be on the list had a single night to read it.&lt;/p&gt;
+&lt;p&gt;That’s resistance.&lt;/p&gt;
+&lt;p&gt;Making a website from scratch so you can do you is a lot better than paying the company store at Squarespace, but it’s not risking your life to read a 600-page novel in a night.&lt;/p&gt;
+&lt;p&gt;More has to be done. &lt;/p&gt;
+&lt;p&gt;I’m just not sure what.&lt;/p&gt;
+&lt;h3&gt;Why I’m optimistic&lt;/h3&gt;
+&lt;p&gt;Actually, that may be stretching it.&lt;/p&gt;
+&lt;p&gt;If you’ve read Heydon Pickering’s post &lt;a href="https://heydonworks.com/article/poisoning-well"&gt;Poisoning the Well&lt;/a&gt;, this is the kind of activism we need. Pickering set up his blog to lead grubby robots.txt-ignoring bots to replicas of his posts. Except when they got there they’d find a quicksand of gibberish that mimics English... and die like dinosaurs in the tar pits of Pickering’s gobbledygook. An artist’s big fat birdie to Sam Altman. I love it.&lt;/p&gt;
+&lt;p&gt;But this may not even be necessary.&lt;/p&gt;
+&lt;p&gt;Humans have been writing slop for a long time now. I myself am a reformed slop peddler. As long as LLMs suck that shit up and regurgitate it — as long as they can’t get their binary hooks on so-called quality data — it’s just going to be slop all the way down. The well Pickering wants to poison may end up poisoning itself.&lt;/p&gt;
+&lt;p&gt;Which, again, pretty much sucks because if it’s just slop talking to slop, the web itself will dry up faster than the Salton Sea, a.k.a. Lithium Valley.&lt;/p&gt;
+&lt;p&gt;So what are you going to do about it?&lt;/p&gt;
+&lt;p&gt;Please. Do something. Anything.&lt;/p&gt;
+&lt;p&gt;Just don’t make another personal website.&lt;/p&gt;</description>
+      <category>The Web</category>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>My Literary Crimes</title>
+      <link>https://blog.maxsheridan.com/posts/post-01/</link>
+      <guid isPermaLink="true">https://blog.maxsheridan.com/posts/post-01/</guid>
+      <description>&lt;p&gt;I was twenty-five when I read Dylan Thomas’ &lt;strong&gt;Lament Poem&lt;/strong&gt; to a room of amateur poets at one of their monthly gatherings in Champaign, Illinois.&lt;/p&gt;
+&lt;p&gt;As Dylan Thomas.&lt;/p&gt;
+&lt;p&gt;I was twenty-five and a genius and these poets, the way I understood them, were a spit in the face of Poetry and the killers of the kind of God-given creativity I exercised every midnight at my handmade desk with a hip flask of Tanqueray and John Coltrane’s &lt;strong&gt;Love Supreme&lt;/strong&gt; playing in the kitchen. Talking about poetry, sharing it, couldn’t make you a better poet.&lt;/p&gt;
+&lt;p&gt;I performed my poem — with a hip flask of Tanqueray — and brought off my literary forgery without a hitch. The only question these poets had at the end was, what with my funny accent, where did I come from?&lt;/p&gt;
+&lt;p&gt;Wales, I said.&lt;/p&gt;
+&lt;p&gt;For me, this farce only reconfirmed the notion that I was the real poet — having confused the false poets and proven they couldn’t even tell the difference between a living poet and a dead one, a Welshman and an American. I never went to another of their meetings and continued to work on my uninspired, derivative, and mostly horrible poems for another year or two before setting out on the Great American Novel.&lt;/p&gt;
+&lt;p&gt;My formal education was in the Classics. My leaning was towards Homeric Greek, my first real joy Catullus. By the time I wiggled my way out of a doomed PhD and was heading to Austin, Texas, in a U-Haul truck with my handmade desk, typewriter, hip flask, and all my John Coltrane, following a Cypriot woman I was madly in love with, I had every reason to believe I was going to be not only a novelist, but the next great one.&lt;/p&gt;
+&lt;p&gt;After all, I had the breadth of learning, the wisdom, the talent. I had the typewriter, the hip flask, the Nat Sherman Naturals, the John Coltrane. And I was on my way to the Official Capital of Slackerdom — Austin, Texas — which, I’d heard, was home to the richest concentration of unemployed geniuses west of the Rio Grande.&lt;/p&gt;
+&lt;p&gt;Ten years and five unpublished novels later, then in my mid-thirties, I learned a lesson every young genius should learn. No one — not agents, editors, friends, not even your own wife (we got married a year after I followed her to Austin in a U-Haul truck) — wants to read 1,600-page novels by young, self-proclaimed geniuses, no matter how talented they think they are, if they’re missing specific elements like plots or sympathetic characters. You could probably say the same thing about 500-page novels without plots, which is where I headed next.&lt;/p&gt;
+&lt;p&gt;By that time we’d moved from Austin to Prague, and then to England. Soon after that we were living in Cyprus above my wife’s parents in a small city on the fringes of Europe called Nicosia where the neighbors’ natural state of rest was prying expectation. They knew how many cigarettes you smoked on your back porch, if you left the house for a job in the morning, or not. I continued to do in Cyprus to make money what I’d been doing off and on since I was twenty-one — I taught.&lt;/p&gt;
+&lt;p&gt;I taught English in Cyprus, mostly, eventually working my way up to a lowly, low-paid position at one of the new universities. Despite how far removed it was from writing, teaching English, or anything else, is good for one thing if you’re a writer. It shows you how people learn, and sometimes how they think. You begin to recognize learning types and appreciate these.&lt;/p&gt;
+&lt;p&gt;And yet for all the differences you find among students, there are some things that appeal to all of them. One of those things is a good story. When a story flops in the classroom, it isn’t usually on account of a tough crowd. This isn’t the Apollo. You just haven’t told it well or hit the right notes.&lt;/p&gt;
+&lt;p&gt;One day, still struggling to publish my novels and teaching to make ends meet, I had what I thought was a very clever idea: I would try, after a decade or so of writing novels, to write a short story.&lt;/p&gt;
+&lt;p&gt;Anyone that’s been through the mainstream, or even the indie, publishing grinder in the States would know that it’s a good place to have your ego buried, in powder form, under a bush in your backyard forever. Spend a few years getting rejected by and sparring with editors and agents, high and low, trying to rise above the pack of equally talented, equally driven writers all competing for the same one or two spots that will eventually put them in the public eye—&lt;/p&gt;
+&lt;p&gt;Well, you’re no longer the great genius you once were.&lt;/p&gt;
+&lt;p&gt;I stepped into short story writing after writing five bad novels, so I had an idea at that point of how to write dialogue. I understood a little about pacing and tension and about something a revered New York agent would tell me a few years later was called “arc.” &lt;/p&gt;
+&lt;p&gt;I learned that sometimes you can even plan a story out, down to the last line, like John Irving does, and still make it good. I learned to accept criticism and how to take a deserved, or undeserved, punch to the gut and recover. I learned over the course of ten years or more — in other words — what I might have learned in a semester or two in a good writing program from an instructor who’d been down the same road.&lt;/p&gt;
+&lt;p&gt;But the most important thing I learned as a non-mainstream writer about placing my neck on the chopping block of the public’s reading tastes was that people read and publish stories for a reason.&lt;/p&gt;
+&lt;p&gt;Yes, it’s true.&lt;/p&gt;
+&lt;p&gt;And the reason is, I’m pretty sure, that those stories are well told or engaging on some level. They might teach readers something or not. End with a resolution or leave us hanging like Raymond Carver’s &lt;strong&gt;Neighbors&lt;/strong&gt; or Elwood Reid’s brilliant &lt;strong&gt;What Salmon Know&lt;/strong&gt;. They might kick us in the ass like Larry Brown’s &lt;strong&gt;Samaritans&lt;/strong&gt; or finish on a pitch-perfect twist like &lt;strong&gt;Alice Fantastic&lt;/strong&gt; by Maggie Estep.&lt;/p&gt;
+&lt;p&gt;In time my stories began to get published. I got my first fan letter, and then some attention from other writers and agents across the ocean. Eventually, a few people began to notice my novels.&lt;/p&gt;
+&lt;p&gt;Which brings me full-swing to the point of this highly personal, highly desultory ramble through the meaning and appropriateness of storytelling as a learnable craft.&lt;/p&gt;
+&lt;p&gt;Anyone that says that creative writing can’t be taught may have a point. But that’s only because they’re phrasing the whole debate falsely and, in my opinion, foolishly.&lt;/p&gt;
+&lt;p&gt;Teaching people how to write stories isn’t about teaching people how to be creative, but about how to approach storytelling. And anyone who denies a person the ability to learn how to tell a story has: a) probably never published much in places where your writing has to make it to the top of a gigantic slush pile; b) no experience teaching; c) never seen the cave drawings at Lascaux.&lt;/p&gt;
+&lt;p&gt;When I reached the point in my life where I had to choose between trying to make a life in Cyprus or heading back to the States, my wife and I (we had two little Cypriot-Americans by then) had just spent a week in San Francisco. The creative landscape is obviously completely different there. The Bay Area was the birthplace of the Beats. It’s still an epicenter for writers and writing and is where a number of my writing acquaintances live. It’s a place where literary things happen.&lt;/p&gt;
+&lt;p&gt;It was partly that trip that inspired me to open Write CY, a creative writing space in Old Nicosia dedicated to community storytelling. &lt;/p&gt;
+&lt;p&gt;I’d decided that if I was going to stay here in Nicosia, I’d at least need to do something related to writing for a living. If we didn’t have Open Mic Nights, I’d try to get them going. If we didn’t have Noir at the Bar, we could eventually aspire to it. If teens and children needed alternative venues for exercising creativity while they still had it, we’d give it to them. &lt;/p&gt;
+&lt;p&gt;And if adults wanted to have a place where they could get some guidance from professionals about how to approach the very difficult task of writing a story that someone would want to read, they’d get it.&lt;/p&gt;
+&lt;p&gt;In a word, everything I envisioned a community creative writing space might be, Write CY would try to be. Because there’s something very sad about a city without a place where people from different backgrounds and abilities can exercise this very human impulse to make sense of themselves and the world through storytelling.&lt;/p&gt;
+&lt;p&gt;I recited &lt;strong&gt;Lament Poem&lt;/strong&gt; off and on for a few years when drunk or high, but never again before a live audience that thought I was the dead Welsh poet Dylan Thomas.&lt;/p&gt;
+&lt;p&gt;At forty-two, I don’t think I’m the same wiseass I was back then. I’m still writing stories and novels and sending them out, and getting acceptances and rejections. I still take pride in what I think of as my God-given talent and the elements of storytelling I learned piece by piece and revision by revision over the years.&lt;/p&gt;
+&lt;p&gt;As a teacher, I sympathize with the way others process ideas. As the director of Write CY, I am absolutely blown away by how dedicated and eager the people who come to us are to learn how to tell their stories, and by how well many of them learn to do it.&lt;/p&gt;</description>
+      <category>Teaching</category>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
