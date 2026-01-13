@@ -16,6 +16,11 @@
 <div class="post-content">
 {{ post.content|safe }}
 </div>
+<hr>
+<p class="feed-link">
+	<span>I’m lazy, you won’t get flooded:</span>
+	<a href="/feed.xml"> Subscribe to my feed.</a>
+</p>
 <nav class="post-navigation" aria-label="Post navigation">
 {% if prev_post -%}
 	<a class="prev" href="{{ prev_post.url }}" rel="prev" aria-label="Previous post: {{ prev_post.title }}"><svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M40 37.07 3.1.16.16 3.09 37.06 40z"/><path d="M4.15 0H0v31.14h4.15z"/><path d="M31.13 0H0v4.15h31.13z"/></svg>{{ prev_post.title }}</a>

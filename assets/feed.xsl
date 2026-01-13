@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom">
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
         <html lang="en">
@@ -9,6 +9,7 @@
                 <meta name="color-scheme" content="light dark"/>
                 <link rel="stylesheet" href="/assets/css/style.css"/>
                 <title>Feed - This Is A Blog</title>
+                <style>.subscribe{width:max-content;padding:.75rem 1rem;margin-block-start:var(--space-2);margin-block-end:var(--space-2);border:1px solid var(--accent);border-radius:1rem;box-shadow:0 2px 6px rgba(0,0,0,.05);font-family:monospace;font-size:calc(.9rem + .15vw);word-break:break-all;color:var(--background);background:var(--primary);cursor:pointer;transition:background .2s ease}.subscribe:hover{opacity:.6}</style>
             </head>
             <body>
                 <header>
@@ -24,13 +25,15 @@
                 </header>
                 <main id="main" tabindex="-1">
                     <h1>RSS</h1>
-                    <p class="index-intro big">This is an old-school RSS feed. Paste the URL in your browser into your feed reader and you’re set. Or click on a link to read my latest posts.</p>
+                    <p class="index-intro big">This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set.
+                    Or click on a link to read my latest posts.</p>
+                    <p class="subscribe" onclick="copyToClipboard(this)"><xsl:value-of select="/rss/channel/atom:link/@href"/></p>                    
                     <ul class="index-list">
                         <xsl:for-each select="/rss/channel/item">
                             <li>
                                 <div class="link">
                                     <a href="{link}"><span><xsl:value-of select="title"/>
-                                        <svg class="arrow-up-rgt" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 37.07 36.9.16l2.94 2.93L2.94 40z"/><path d="M35.85 0H40v31.14h-4.15z"/><path d="M8.87 0H40v4.15H8.87z"/></svg>
+                                        <svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 37.07 36.9.16l2.94 2.93L2.94 40z"/><path d="M35.85 0H40v31.14h-4.15z"/><path d="M8.87 0H40v4.15H8.87z"/></svg>
                                     </span></a>
                                 </div>
                                 <div class="meta" aria-label="Date and category">
@@ -74,8 +77,8 @@
                 </footer>
                 <script>
                 function copyEmail() {navigator.clipboard.writeText('your@email.com'); alert('Email copied to clipboard!');}
+                function copyToClipboard(element) {var text = element.textContent; navigator.clipboard.writeText(text).then(function() {alert('RSS feed URL copied to clipboard!');}).catch(function(err) {console.error('Failed to copy:', err);});}
                 </script>
-
                 </body>
             </html>
         </xsl:template>
