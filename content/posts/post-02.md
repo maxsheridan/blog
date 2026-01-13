@@ -35,11 +35,11 @@ The slop sucks. The slop is terrifying and may put me out of a job. The slop is 
 
 But slapping a “made by humans” badge up on your website and linking it to a webring of more human websites is doing less than you need to combat the slop, if you need to do something.
 
-You’re a human. Fine. So are the underpaid Turkers in Bangalore sowing LLM metadata like piecework. 
+You’re human. Fine. So are the underpaid Turkers in Bangalore sowing LLM metadata like piecework. 
 
 So is the Black woman whose face Gemini can’t identify. 
 
-If your activism ends with being a human, maybe think a little deeper on the subject. Because, not to be too cynical, the digital pieceworkers in Bangalore probably aren’t losing too much sleep over fueling the beast that put a writer in Sweden (that’s me) out of a job. Nor would I want them to.
+If your activism ends with being human, maybe think a little deeper on the subject. Because, not to be too cynical, the digital pieceworkers in Bangalore probably aren’t losing too much sleep over fueling the beast that put a writer in Sweden (that’s me) out of a job. Nor would I want them to.
 
 ###You’re preaching to the choir###
 
