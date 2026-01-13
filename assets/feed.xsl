@@ -73,9 +73,10 @@
                 <footer aria-label="Footer info">
                     <a href="/colophon">Colophon</a>
                     <hr aria-hidden="true"/>
-                    <p>&#169; 2025 Max Sheridan</p>
+                    <p>&#169; <span id="year"></span> Max Sheridan</p>
                 </footer>
                 <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
                 function copyEmail() {navigator.clipboard.writeText('your@email.com'); alert('Email copied to clipboard!');}
                 function copyToClipboard(element) {var text = element.textContent; navigator.clipboard.writeText(text).then(function() {alert('RSS feed URL copied to clipboard!');}).catch(function(err) {console.error('Failed to copy:', err);});}
                 </script>
