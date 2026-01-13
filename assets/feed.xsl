@@ -9,7 +9,7 @@
                 <meta name="color-scheme" content="light dark"/>
                 <link rel="stylesheet" href="/assets/css/style.css"/>
                 <title>Feed - This Is A Blog</title>
-                <style>.subscribe{width:max-content;padding:.75rem 1rem;margin-block-start:var(--space-2);margin-block-end:var(--space-2);border:1px solid var(--accent);border-radius:1rem;box-shadow:0 2px 6px rgba(0,0,0,.05);font-family:monospace;font-size:calc(.9rem + .15vw);word-break:break-all;color:var(--background);background:var(--primary);cursor:pointer;transition:background .2s ease}.subscribe:hover{opacity:.6}h1 + p{margin-block-start: var(--space-0)}</style>
+                <style>.subscribe{width:max-content;padding:.75rem 1rem;margin-block-start:var(--space-2);margin-block-end:var(--space-2);border:1px solid var(--accent);border-radius:1rem;box-shadow:0 2px 6px rgba(0,0,0,.05);font-family:monospace;font-size:calc(.9rem + .15vw);word-break:break-all;color:var(--background);background:var(--primary);cursor:pointer;transition:background .2s ease}.subscribe:hover{opacity:.6}h1 + p{margin-block-start:var(--space-0)}</style>
             </head>
             <body>
                 <header>
