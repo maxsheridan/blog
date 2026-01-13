@@ -51,14 +51,6 @@
   --background: #EDECE4;
 }
 
-@media(prefers-color-scheme:dark) {
-  :root {
-  --primary: #D3CEC1;
-  --highlight: #50ADD7;
-  --background: #161718;
-  }
-}
-
 @supports (font-variation-settings: normal) {
   :root {
       --body: 'Hex Franklin', system-ui, sans-serif;
@@ -103,6 +95,17 @@ body {
   background-color: var(--background);
 }
 
+@media(prefers-color-scheme:dark) {
+  :root {
+  --primary: #D3CEC1;
+  --highlight: #50ADD7;
+  --background: #161718;
+  }
+  body {
+    font-variation-settings: "wdth" 90, "wght" 400;
+  }
+}
+
 main {
   flex: 1;
   width: 100%;
@@ -120,6 +123,13 @@ h1 {
 h2 {
   font-size: calc(var(--paragraph) * 1.5);
   line-height: 1.2;
+}
+
+h3 {
+  font-family: var(--display);
+  font-size: calc(var(--paragraph) * 1.5);
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 nav ul  {
@@ -252,6 +262,10 @@ hr {
 
 article div > * + *   {
   margin-block-start: var(--space-1);
+}
+
+article p + h3 {
+  margin-block-start: var(--space-2);
 }
 
 article {
