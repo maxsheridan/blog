@@ -353,7 +353,6 @@ class BlogBuilder:
             SubElement(item, 'title').text = post['title']
             SubElement(item, 'link').text = post['full_url']
             SubElement(item, 'guid', isPermaLink='true').text = post['full_url']
-            SubElement(item, 'description').text = post['content']
             SubElement(item, 'category').text = post['category']
             
             # Format date for RSS (RFC 822)
