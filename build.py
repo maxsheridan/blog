@@ -365,7 +365,7 @@ class BlogBuilder:
         # Insert xml-stylesheet processing instruction after XML declaration
         lines = xml_str.splitlines()
         if lines and lines[0].startswith('<?xml'):
-            lines.insert(1, '<?xml-stylesheet type="text/xsl" href="feed.xsl"?>')
+            lines.insert(1, f'<?xml-stylesheet type="text/xsl" href="{self.site_url}/feed.xsl"?>')
         xml_str = '\n'.join(lines)
         with open(self.output_dir / 'feed.xml', 'w', encoding='utf-8') as f:
             f.write(xml_str)
