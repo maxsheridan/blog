@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
-<?xml-stylesheet type="text/xsl" href="feed.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://blog.maxsheridan.com/feed.xsl"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>This Is A Blog</title>
     <link>https://blog.maxsheridan.com</link>
     <description>Where I write, think, and ramble, but mostly ramble.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jan 2026 18:07:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jan 2026 10:49:40 +0000</lastBuildDate>
     <atom:link href="https://blog.maxsheridan.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Please, No More Personal Websites</title>
