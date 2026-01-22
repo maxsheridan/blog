@@ -336,7 +336,6 @@ figcaption {
   margin-block-start: var(--space--1);
   font-size: calc(var(--paragraph) * .9);
   color: var(--accent);
-  text-align: center;
 }
 
 .post-navigation {
