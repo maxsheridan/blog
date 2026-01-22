@@ -90,7 +90,7 @@ body {
   font-family: var(--body);
   font-size: var(--paragraph);
   font-variation-settings: "wdth" 90, "wght" 425;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--primary);
   background-color: var(--background);
 }
@@ -109,7 +109,7 @@ body {
 main {
   flex: 1;
   width: 100%;
-  padding: var(--space-3) 0;
+  padding: var(--space-4) 0;
 }
 
 .site-title,
@@ -208,6 +208,20 @@ p.big {
 
 strong {
   font-variation-settings: "wdth" 95, "wght" 550;
+}
+
+em {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+
+blockquote {
+  border-left: 2px solid lightgray;
+  padding-left: 1.5rem;
+}
+
+blockquote > * + * {
+  margin-block-start: var(--space-0);
 }
 
 .index-list {
