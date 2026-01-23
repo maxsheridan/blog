@@ -71,10 +71,7 @@ I went back to Blount Jr.’s website and took a closer look at the Rock Bottom 
 
 And there was a photo of The Rock Bottom Remainders — in alphabetic order: Dave Barry, Tad Bartimus, Roy Blount, Jr., Michael Dorris, Robert Fulghum, Kathi Kamen Goldmark , Matt Groening, Josh Kelly, Stephen King, Barbara Kingsolver, Greil Marcus, Dave Marsh, Ridley Pearson, Joel Selvin, and Amy Tan.
 
-<figure>
-  <img src="/assets/images/rock_bottom_remainders.webp" alt="The Rock Bottom Remainders">
-  <figcaption>The Rock Bottom Remainders; Roy Blount Jr. sneering bottom left.</figcaption>
-</figure>
+![The Rock Bottom Remainders; Roy Blount Jr. sneering bottom left](/assets/images/rock_bottom_remainders.webp)*The Rock Bottom Remainders; Roy Blount Jr. sneering bottom left*{: .with-caption}
 
 I’m sure you recognize at least one name on that list. The Rock Bottom Remainders wasn’t Blount’s back stock, it was a group of very successful aging writers who played music in their free time and even performed concerts.
 

@@ -98,10 +98,10 @@ body {
 
 @media(prefers-color-scheme:dark) {
   :root {
-  --primary: #D3CEC1;
-  --highlight: #50ADD7;
-  --caption: var(--accent);
-  --background: #161718;
+    --primary: #D3CEC1;
+    --highlight: #50ADD7;
+    --caption: var(--accent);
+    --background: #161718;
   }
   body {
     font-variation-settings: "wdth" 90, "wght" 400;
@@ -267,7 +267,7 @@ hr {
   text-transform: uppercase;
 }
 
-article div > * + *:not(figure)   {
+article div > *:not(blockquote):not(figure) + *:not(blockquote):not(figure)   {
   margin-block-start: var(--space-1);
 }
 
@@ -313,30 +313,36 @@ article a:not(.category a):not(.post-navigation a) {
   margin-block-end: var(--space-3);
 }
 
-blockquote {
-  border-left: 2px solid lightgray;
-  padding-left: 1.5rem;
+blockquote,
+figure  {
+  margin-block-start: var(--space-2);
+  margin-block-end: var(--space-2);
 }
 
 blockquote > * + * {
   margin-block-start: var(--space-0);
 }
 
-figure {
+blockquote {
+  border-left: 2px solid lightgray;
+  padding-left: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure.with-caption {
   margin-block-start: var(--space-2);
   margin-block-end: var(--space-2);
 }
 
-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: .25rem;
-}
-
-figcaption {
-  margin-block-start: var(--space--1);
-  font-size: calc(var(--paragraph) * .8);
+figure.with-caption figcaption {
+  margin-block-start: var(--space--3);
+  font-family: 'Georgia';
+  font-size: calc(var(--paragraph) * 0.85);
+  font-style: italic;
   color: var(--caption);
 }
 

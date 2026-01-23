@@ -60,6 +60,22 @@ class BlogBuilder:
         text = re.sub(r'[-\s]+', '-', text)
         return text.strip('-')
     
+    def wrap_images_with_captions(self, html_content):
+        """Convert <img><em>caption</em> patterns to <figure><img><figcaption>"""
+        # Pattern: <p><img...><em class="with-caption">caption</em></p>
+        pattern = r'<p>(<img[^>]+>)<em class="with-caption">([^<]+)</em></p>'
+        replacement = r'<figure class="with-caption">\n    \1\n    <figcaption>\2</figcaption>\n</figure>'
+        html_content = re.sub(pattern, replacement, html_content)
+        
+        # Also handle without class (fallback for any img+em pattern)
+        pattern = r'<p>(<img[^>]+>)<em>([^<]+)</em></p>'
+        def replace_fn(match):
+            # Only replace if not already in a figure
+            return f'<figure>\n    {match.group(1)}\n    <figcaption>{match.group(2)}</figcaption>\n</figure>'
+        html_content = re.sub(pattern, replace_fn, html_content)
+        
+        return html_content
+    
     def parse_frontmatter(self, content):
         """Extract frontmatter and content from markdown file"""
         if not content.startswith('---'):
@@ -88,7 +104,8 @@ class BlogBuilder:
                 content = f.read()
             
             frontmatter, body = self.parse_frontmatter(content)
-            html_content = markdown.markdown(body)
+            html_content = markdown.markdown(body, extensions=['attr_list'])
+            html_content = self.wrap_images_with_captions(html_content)
             
             post = {
                 'title': frontmatter.get('title', 'Untitled'),
@@ -249,7 +266,8 @@ class BlogBuilder:
                 content = f.read()
             
             frontmatter, body = self.parse_frontmatter(content)
-            html_content = markdown.markdown(body)
+            html_content = markdown.markdown(body, extensions=['attr_list'])
+            html_content = self.wrap_images_with_captions(html_content)
             
             page = {
                 'title': frontmatter.get('title', md_file.stem.title()),
