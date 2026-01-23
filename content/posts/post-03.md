@@ -69,7 +69,7 @@ This threw me for a loop.
 
 I went back to Blount Jr.’s website and took a closer look at the Rock Bottom Remainders. This time I actually clicked on the link. 
 
-And there was a photo of The Rock Bottom Remainders — in alphabetic order: Dave Barry, Tad Bartimus, Roy Blount, Jr., Michael Dorris, Robert Fulghum, Kathi Kamen Goldmark , Matt Groening, Josh Kelly, Stephen King, Barbara Kingsolver, Greil Marcus, Dave Marsh, Ridley Pearson, Joel Selvin, and Amy Tan.
+And there was a photo of The Rock Bottom Remainders — in alphabetical order: Dave Barry, Tad Bartimus, Roy Blount, Jr., Michael Dorris, Robert Fulghum, Kathi Kamen Goldmark , Matt Groening, Josh Kelly, Stephen King, Barbara Kingsolver, Greil Marcus, Dave Marsh, Ridley Pearson, Joel Selvin, and Amy Tan.
 
 ![The Rock Bottom Remainders; Roy Blount Jr. sneering bottom left](/assets/images/rock_bottom_remainders.webp)*The Rock Bottom Remainders; Roy Blount Jr. sneering bottom left*{: .with-caption}
 
