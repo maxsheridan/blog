@@ -340,7 +340,7 @@ figure.with-caption {
 
 figure.with-caption figcaption {
   margin-block-start: var(--space--3);
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-size: calc(var(--paragraph) * 0.85);
   font-style: italic;
   color: var(--caption);
