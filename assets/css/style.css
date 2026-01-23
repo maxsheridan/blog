@@ -267,7 +267,7 @@ hr {
   text-transform: uppercase;
 }
 
-article div > *:not(blockquote):not(figure) + *:not(blockquote):not(figure)   {
+article div > *:not(blockquote):not(figure) + *:not(blockquote):not(figure) {
   margin-block-start: var(--space-1);
 }
 
