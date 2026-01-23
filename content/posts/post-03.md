@@ -39,7 +39,7 @@ I went out and had a hamburger.
 
 When I got back, Roy Blount Jr. had answered.
 
-> ***Mr Sheridan,***
+> ***Mr. Sheridan,***
 > 
 > ***I’m sorry but I can’t encourage anyone to send me his or her novel. Good luck with it.***
 > 
