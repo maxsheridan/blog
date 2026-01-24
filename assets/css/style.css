@@ -31,6 +31,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Gelasio';
+  src: url('/assets/type/gelasio_italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --ratio: 1.5;
   --space-0: calc(1rem + .5vw);
@@ -213,7 +221,7 @@ strong {
 }
 
 em {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Gelasio', serif;
   font-weight: 400;
 }
 
@@ -340,7 +348,7 @@ figure.with-caption {
 
 figure.with-caption figcaption {
   margin-block-start: var(--space--3);
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  font-family: 'Georgia', 'Gelasio', serif;
   font-size: calc(var(--paragraph) * 0.85);
   font-style: italic;
   color: var(--caption);
