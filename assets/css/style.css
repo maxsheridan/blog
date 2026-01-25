@@ -411,6 +411,14 @@ figure.with-caption figcaption {
   width: 50%;
 }
 
+.next {
+  text-align: right;
+}
+
+.post-navigation > a.next:only-child {
+  margin-left: auto;
+}
+
 footer {
   display: flex;
   justify-content: center;
