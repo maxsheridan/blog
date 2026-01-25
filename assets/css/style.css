@@ -263,8 +263,8 @@ hr {
   text-transform: uppercase;
 }
 
-article .post-intro > * + *,
-article .post-content p + p {
+article .post-content p + p,
+article > div:not(.post-content):not(.font-toggle) > * + * {
   margin-block-start: var(--space-1);
 }
 
