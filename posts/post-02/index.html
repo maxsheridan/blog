@@ -51,6 +51,14 @@
                     <h1>Please, No More Personal Websites</h1>
                     <h2>Ok, you’re human. So what?</h2>
                 </div>
+                <div class="font-toggle" role="group" aria-label="Font style toggle">
+                    <button class="toggle-option active" data-font="sans-serif" aria-pressed="true">
+                        <span class="sans">T</span>
+                    </button>
+                    <button class="toggle-option" data-font="serif" aria-pressed="false">
+                        <span class="serif">T</span>
+                    </button>
+                </div>
                 <div class="post-content">
                     <p>Back before the pandemic, when I was running a writing agency, I once ordered five blog articles for $1.99 on a lark. The idea was I’d pay for the slop and write an article about the experience — as a warning to anyone considering doing the same for their business.</p>
                     <p>I spent half my waking hours trying to convince project managers and potential clients that good writing was worth paying for back then, that their voices were as important as their websites. As I’m no longer running the agency, you can see who won that battle.</p>
@@ -74,7 +82,7 @@
                     <p>Obvious, right? But we already believe you. We’re suffering with you. I get why you’d feel compelled to espouse your humanity at a time like this. I even almost get why you’d construct <a href="https://henry.codes/writing/a-website-to-destroy-all-websites/?utm_source=the-index&amp;utm_medium=newsletter">an elaborate mini-website</a> to do that. But a pretty site enjoining visitors to throw off the chains of capitalism to... build a personal website?</p>
                     <p>As far as I remember, from the embarrassingly many times I failed to convince people to pay me to write for them, those unconvinced cheapos were my audience, not the hack sitting next to me at the bar not getting paid. I might have lamented the state of the industry to that guy, but when it was time to sound the clarion and publish an article that actually said something, I turned the trumpet in the other direction.</p>
                     <h3>This isn’t samizdat</h3>
-                    <p>I lived in Prague for three years in my twenties, where I spent almost all of my time at bars. Sometimes I brought books along. At one of those bars I met a former dissident who noticed my copy of Joseph Skvorecky’s <strong>The Engineer of Human Souls</strong>, a 600-page book that took me a few weeks to read.</p>
+                    <p>I lived in Prague for three years in my twenties, where I spent almost all of my time at bars. Sometimes I brought books along. At one of those bars I met a former dissident who noticed my copy of Joseph Skvorecky’s “The Engineer of Human Souls,” a 600-page tome that took me a few weeks to read.</p>
                     <p>This guy told me back in the days of samizdat, when the Soviets banned books like Texans, a single copy of Skvorecky’s outlawed book made it back through the Iron Curtain from Canada, where Skvorecky had emigrated. Readers lucky enough to be on the list had a single night to read it.</p>
                     <p>That’s resistance.</p>
                     <p>Making a website from scratch so you can do you is a lot better than paying the company store at Squarespace, but it’s not risking your life to read a 600-page novel in a night.</p>
@@ -101,6 +109,54 @@
                 </nav>
             </article>
         </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-option');
+            const postContent = document.querySelector('.post-content');
+            const feedLink = document.querySelector('.feed-link');
+
+            // Check for saved preference
+            const savedFont = localStorage.getItem('preferredFont');
+            if (savedFont === 'serif') {
+            postContent.classList.add('serif-mode');
+            feedLink.classList.add('serif-mode');
+            toggleButtons.forEach(btn => {
+            if (btn.dataset.font === 'serif') {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+            } else {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            }
+            });
+            }
+
+            toggleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+            const selectedFont = this.dataset.font;
+
+            // Update active states
+            toggleButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            });
+            this.classList.add('active');
+            this.setAttribute('aria-pressed', 'true');
+
+            // Apply font change
+            if (selectedFont === 'serif') {
+            postContent.classList.add('serif-mode');
+            feedLink.classList.add('serif-mode');
+            localStorage.setItem('preferredFont', 'serif');
+            } else {
+            postContent.classList.remove('serif-mode');
+            feedLink.classList.remove('serif-mode');
+            localStorage.setItem('preferredFont', 'sans-serif');
+            }
+            });
+            });
+            });
+        </script>
         <footer aria-label="Footer info">
             <a href="/colophon">Colophon</a>
             <hr aria-hidden="true">

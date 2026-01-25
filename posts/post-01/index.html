@@ -51,10 +51,18 @@
                     <h1>My Literary Crimes</h1>
                     <h2>A Defense of Teaching Storytelling</h2>
                 </div>
+                <div class="font-toggle" role="group" aria-label="Font style toggle">
+                    <button class="toggle-option active" data-font="sans-serif" aria-pressed="true">
+                        <span class="sans">T</span>
+                    </button>
+                    <button class="toggle-option" data-font="serif" aria-pressed="false">
+                        <span class="serif">T</span>
+                    </button>
+                </div>
                 <div class="post-content">
-                    <p>I was twenty-five when I read Dylan Thomas’ <strong>Lament Poem</strong> to a room of amateur poets at one of their monthly gatherings in Champaign, Illinois.</p>
+                    <p>I was twenty-five when I read Dylan Thomas’s “Lament Poem” to a room of amateur poets at one of their monthly gatherings in Champaign, Illinois.</p>
                     <p>As Dylan Thomas.</p>
-                    <p>I was twenty-five and a genius and these poets, the way I understood them, were a spit in the face of Poetry and the killers of the kind of God-given creativity I exercised every midnight at my handmade desk with a hip flask of Tanqueray and John Coltrane’s <strong>Love Supreme</strong> playing in the kitchen. Talking about poetry, sharing it, couldn’t make you a better poet.</p>
+                    <p>I was twenty-five and a genius and these poets, the way I understood them, were a spit in the face of Poetry and the killers of the kind of God-given creativity I exercised every midnight at my handmade desk with a hip flask of Tanqueray and John Coltrane’s “Love Supreme” playing in the kitchen. Talking about poetry, sharing it, couldn’t make you a better poet.</p>
                     <p>I performed my poem — with a hip flask of Tanqueray — and brought off my literary forgery without a hitch. The only question these poets had at the end was, what with my funny accent, where did I come from?</p>
                     <p>Wales, I said.</p>
                     <p>For me, this farce only reconfirmed the notion that I was the real poet — having confused the false poets and proven they couldn’t even tell the difference between a living poet and a dead one, a Welshman and an American. I never went to another of their meetings and continued to work on my uninspired, derivative, and mostly horrible poems for another year or two before setting out on the Great American Novel.</p>
@@ -71,7 +79,7 @@
                     <p>I learned that sometimes you can even plan a story out, down to the last line, like John Irving does, and still make it good. I learned to accept criticism and how to take a deserved, or undeserved, punch to the gut and recover. I learned over the course of ten years or more — in other words — what I might have learned in a semester or two in a good writing program from an instructor who’d been down the same road.</p>
                     <p>But the most important thing I learned as a non-mainstream writer about placing my neck on the chopping block of the public’s reading tastes was that people read and publish stories for a reason.</p>
                     <p>Yes, it’s true.</p>
-                    <p>And the reason is, I’m pretty sure, that those stories are well told or engaging on some level. They might teach readers something or not. End with a resolution or leave us hanging like Raymond Carver’s <strong>Neighbors</strong> or Elwood Reid’s brilliant <strong>What Salmon Know</strong>. They might kick us in the ass like Larry Brown’s <strong>Samaritans</strong> or finish on a pitch-perfect twist like <strong>Alice Fantastic</strong> by Maggie Estep.</p>
+                    <p>And the reason is, I’m pretty sure, that those stories are well told or engaging on some level. They might teach readers something or not. End with a resolution or leave us hanging like Raymond Carver’s “Neighbors” or Elwood Reid’s brilliant “What Salmon Know.” They might kick us in the ass like Larry Brown’s “Samaritans” or finish on a pitch-perfect twist like “Alice Fantastic” by Maggie Estep.</p>
                     <p>In time my stories began to get published. I got my first fan letter, and then some attention from other writers and agents across the ocean. Eventually, a few people began to notice my novels.</p>
                     <p>Which brings me full-swing to the point of this highly personal, highly desultory ramble through the meaning and appropriateness of storytelling as a learnable craft.</p>
                     <p>Anyone that says that creative writing can’t be taught may have a point. But that’s only because they’re phrasing the whole debate falsely and, in my opinion, foolishly.</p>
@@ -81,7 +89,7 @@
                     <p>I’d decided that if I was going to stay here in Nicosia, I’d at least need to do something related to writing for a living. If we didn’t have Open Mic Nights, I’d try to get them going. If we didn’t have Noir at the Bar, we could eventually aspire to it. If teens and children needed alternative venues for exercising creativity while they still had it, we’d give it to them. </p>
                     <p>And if adults wanted to have a place where they could get some guidance from professionals about how to approach the very difficult task of writing a story that someone would want to read, they’d get it.</p>
                     <p>In a word, everything I envisioned a community creative writing space might be, Write CY would try to be. Because there’s something very sad about a city without a place where people from different backgrounds and abilities can exercise this very human impulse to make sense of themselves and the world through storytelling.</p>
-                    <p>I recited <strong>Lament Poem</strong> off and on for a few years when drunk or high, but never again before a live audience that thought I was the dead Welsh poet Dylan Thomas.</p>
+                    <p>I recited “Lament Poem” off and on for a few years when drunk or high, but never again before a live audience that thought I was the dead Welsh poet Dylan Thomas.</p>
                     <p>At forty-two, I don’t think I’m the same wiseass I was back then. I’m still writing stories and novels and sending them out, and getting acceptances and rejections. I still take pride in what I think of as my God-given talent and the elements of storytelling I learned piece by piece and revision by revision over the years.</p>
                     <p>As a teacher, I sympathize with the way others process ideas. As the director of Write CY, I am absolutely blown away by how dedicated and eager the people who come to us are to learn how to tell their stories, and by how well many of them learn to do it.</p>
                 </div>
@@ -95,6 +103,54 @@
                 </nav>
             </article>
         </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-option');
+            const postContent = document.querySelector('.post-content');
+            const feedLink = document.querySelector('.feed-link');
+
+            // Check for saved preference
+            const savedFont = localStorage.getItem('preferredFont');
+            if (savedFont === 'serif') {
+            postContent.classList.add('serif-mode');
+            feedLink.classList.add('serif-mode');
+            toggleButtons.forEach(btn => {
+            if (btn.dataset.font === 'serif') {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+            } else {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            }
+            });
+            }
+
+            toggleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+            const selectedFont = this.dataset.font;
+
+            // Update active states
+            toggleButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            });
+            this.classList.add('active');
+            this.setAttribute('aria-pressed', 'true');
+
+            // Apply font change
+            if (selectedFont === 'serif') {
+            postContent.classList.add('serif-mode');
+            feedLink.classList.add('serif-mode');
+            localStorage.setItem('preferredFont', 'serif');
+            } else {
+            postContent.classList.remove('serif-mode');
+            feedLink.classList.remove('serif-mode');
+            localStorage.setItem('preferredFont', 'sans-serif');
+            }
+            });
+            });
+            });
+        </script>
         <footer aria-label="Footer info">
             <a href="/colophon">Colophon</a>
             <hr aria-hidden="true">

@@ -51,9 +51,17 @@
                     <h1>The Rock Bottom Remainders</h1>
                     <h2>I fucked up. Again.</h2>
                 </div>
+                <div class="font-toggle" role="group" aria-label="Font style toggle">
+                    <button class="toggle-option active" data-font="sans-serif" aria-pressed="true">
+                        <span class="sans">T</span>
+                    </button>
+                    <button class="toggle-option" data-font="serif" aria-pressed="false">
+                        <span class="serif">T</span>
+                    </button>
+                </div>
                 <div class="post-content">
                     <p>I’ve blundered through just about every facet of professional writing imaginable.</p>
-                    <p>I once sent a 1,000-page manuscript to an unsuspecting publisher in Minnesota in a box that looked just like the one Kevin Spacey put Gwyneth Paltrow’s head in and sent to Brad Pitt in <strong>Seven</strong>.</p>
+                    <p>I once sent a 1,000-page manuscript to an unsuspecting publisher in Minnesota in a box that looked just like the one Kevin Spacey put Gwyneth Paltrow’s head in and sent to Brad Pitt in “Seven.”</p>
                     <p>I’ve argued with well-meaning agents and submitted unhinged flash fiction to top-notch lit magazines until they asked me to stop.</p>
                     <p>I’ve even sent unsolicited manuscripts to writers whose work I liked. Looking back, I don’t regret it. Not all of it.</p>
                     <p>One of my manuscripts ended up in Little Rock, Arkansas, at the address of a man I’m almost certain was Charles Portis, my literary idol. Not that I expected him to read the thing. I was just hoping he’d respond to my heartfelt fan letter. That never happened.</p>
@@ -76,7 +84,7 @@
                     </blockquote>
                     <p>I guess it’s what I’d expected.</p>
                     <p>But it didn’t stop me. I’d already gotten through the roadblock. I just needed to come up with a very good reason for Blount Jr. to take me seriously — a funny, provocative, original point of entry into Blount’s good graces that he would be repeating at dinner parties for years to come like that other Charles Portis who had my book.</p>
-                    <p>I did a quick once-over of Blount’s website, and there it was staring me right in the face. A tab that said <strong>Rock Bottom Remainders</strong>. </p>
+                    <p>I did a quick once-over of Blount’s website, and there it was staring me right in the face. A tab that said “Rock Bottom Remainders.” </p>
                     <p>I couldn’t have been any luckier if Charles Portis had fed me that information himself. As a ploy, I would offer to buy several copies of each and every one of Blount’s remaindered books if he didn’t think my novel was the funniest he’d read in years.</p>
                     <p>To score extra points, I even compared my book to the work of Portis himself, suggesting that with Portis getting on in years and not likely to produce another masterpiece any time soon, this might be Blount’s last chance — Blount was no spring chicken — to read something as good as Portis in his lifetime. </p>
                     <p>It was a subtle nod at Blount’s own mortality, just the kind of thing he was bound to appreciate. The fact that Roy Blount Jr. would be peddling his own books at staggering discounts on his own website didn’t cheapen him for me at all. In fact, I kind of liked him more for it. This was the writer’s life.</p>
@@ -109,6 +117,54 @@
                 </nav>
             </article>
         </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-option');
+            const postContent = document.querySelector('.post-content');
+            const feedLink = document.querySelector('.feed-link');
+
+            // Check for saved preference
+            const savedFont = localStorage.getItem('preferredFont');
+            if (savedFont === 'serif') {
+            postContent.classList.add('serif-mode');
+            feedLink.classList.add('serif-mode');
+            toggleButtons.forEach(btn => {
+            if (btn.dataset.font === 'serif') {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+            } else {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            }
+            });
+            }
+
+            toggleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+            const selectedFont = this.dataset.font;
+
+            // Update active states
+            toggleButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            });
+            this.classList.add('active');
+            this.setAttribute('aria-pressed', 'true');
+
+            // Apply font change
+            if (selectedFont === 'serif') {
+            postContent.classList.add('serif-mode');
+            feedLink.classList.add('serif-mode');
+            localStorage.setItem('preferredFont', 'serif');
+            } else {
+            postContent.classList.remove('serif-mode');
+            feedLink.classList.remove('serif-mode');
+            localStorage.setItem('preferredFont', 'sans-serif');
+            }
+            });
+            });
+            });
+        </script>
         <footer aria-label="Footer info">
             <a href="/colophon">Colophon</a>
             <hr aria-hidden="true">
