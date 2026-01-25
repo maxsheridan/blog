@@ -353,14 +353,14 @@ article a:not(.category a):not(.post-navigation a) {
   font-family: Georgia, serif;
 }
 
-.post-content.serif-mode,
-.feed-link.serif-mode {
-  font-family: Georgia, serif;
-}
-
 .post-content {
   margin-block-start: var(--space-2);
   margin-block-end: var(--space-3);
+}
+
+.post-content.serif-mode,
+.feed-link.serif-mode {
+  font-family: Georgia, serif;
 }
 
 blockquote,
