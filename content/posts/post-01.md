@@ -5,11 +5,11 @@ date: 2025-10-22
 category: Teaching
 ---
 
-I was twenty-five when I read Dylan Thomas’ **Lament Poem** to a room of amateur poets at one of their monthly gatherings in Champaign, Illinois.
+I was twenty-five when I read Dylan Thomas’s “Lament Poem” to a room of amateur poets at one of their monthly gatherings in Champaign, Illinois.
 
 As Dylan Thomas.
 
-I was twenty-five and a genius and these poets, the way I understood them, were a spit in the face of Poetry and the killers of the kind of God-given creativity I exercised every midnight at my handmade desk with a hip flask of Tanqueray and John Coltrane’s **Love Supreme** playing in the kitchen. Talking about poetry, sharing it, couldn’t make you a better poet.
+I was twenty-five and a genius and these poets, the way I understood them, were a spit in the face of Poetry and the killers of the kind of God-given creativity I exercised every midnight at my handmade desk with a hip flask of Tanqueray and John Coltrane’s “Love Supreme” playing in the kitchen. Talking about poetry, sharing it, couldn’t make you a better poet.
 
 I performed my poem — with a hip flask of Tanqueray — and brought off my literary forgery without a hitch. The only question these poets had at the end was, what with my funny accent, where did I come from?
 
@@ -43,7 +43,7 @@ But the most important thing I learned as a non-mainstream writer about placing 
 
 Yes, it’s true.
 
-And the reason is, I’m pretty sure, that those stories are well told or engaging on some level. They might teach readers something or not. End with a resolution or leave us hanging like Raymond Carver’s **Neighbors** or Elwood Reid’s brilliant **What Salmon Know**. They might kick us in the ass like Larry Brown’s **Samaritans** or finish on a pitch-perfect twist like **Alice Fantastic** by Maggie Estep.
+And the reason is, I’m pretty sure, that those stories are well told or engaging on some level. They might teach readers something or not. End with a resolution or leave us hanging like Raymond Carver’s “Neighbors” or Elwood Reid’s brilliant “What Salmon Know.” They might kick us in the ass like Larry Brown’s “Samaritans” or finish on a pitch-perfect twist like “Alice Fantastic” by Maggie Estep.
 
 In time my stories began to get published. I got my first fan letter, and then some attention from other writers and agents across the ocean. Eventually, a few people began to notice my novels.
 
@@ -63,7 +63,7 @@ And if adults wanted to have a place where they could get some guidance from pro
 
 In a word, everything I envisioned a community creative writing space might be, Write CY would try to be. Because there’s something very sad about a city without a place where people from different backgrounds and abilities can exercise this very human impulse to make sense of themselves and the world through storytelling.
 
-I recited **Lament Poem** off and on for a few years when drunk or high, but never again before a live audience that thought I was the dead Welsh poet Dylan Thomas.
+I recited “Lament Poem” off and on for a few years when drunk or high, but never again before a live audience that thought I was the dead Welsh poet Dylan Thomas.
 
 At forty-two, I don’t think I’m the same wiseass I was back then. I’m still writing stories and novels and sending them out, and getting acceptances and rejections. I still take pride in what I think of as my God-given talent and the elements of storytelling I learned piece by piece and revision by revision over the years.
 

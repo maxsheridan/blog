@@ -7,7 +7,7 @@ category: Writing
 
 I’ve blundered through just about every facet of professional writing imaginable.
 
-I once sent a 1,000-page manuscript to an unsuspecting publisher in Minnesota in a box that looked just like the one Kevin Spacey put Gwyneth Paltrow’s head in and sent to Brad Pitt in **Seven**.
+I once sent a 1,000-page manuscript to an unsuspecting publisher in Minnesota in a box that looked just like the one Kevin Spacey put Gwyneth Paltrow’s head in and sent to Brad Pitt in “Seven.”
 
 I’ve argued with well-meaning agents and submitted unhinged flash fiction to top-notch lit magazines until they asked me to stop.
 
@@ -49,7 +49,7 @@ I guess it’s what I’d expected.
 
 But it didn’t stop me. I’d already gotten through the roadblock. I just needed to come up with a very good reason for Blount Jr. to take me seriously — a funny, provocative, original point of entry into Blount’s good graces that he would be repeating at dinner parties for years to come like that other Charles Portis who had my book.
 
-I did a quick once-over of Blount’s website, and there it was staring me right in the face. A tab that said **Rock Bottom Remainders**. 
+I did a quick once-over of Blount’s website, and there it was staring me right in the face. A tab that said “Rock Bottom Remainders.” 
 
 I couldn’t have been any luckier if Charles Portis had fed me that information himself. As a ploy, I would offer to buy several copies of each and every one of Blount’s remaindered books if he didn’t think my novel was the funniest he’d read in years.
 

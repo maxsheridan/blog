@@ -49,7 +49,7 @@ As far as I remember, from the embarrassingly many times I failed to convince pe
 
 ###This isn’t samizdat###
 
-I lived in Prague for three years in my twenties, where I spent almost all of my time at bars. Sometimes I brought books along. At one of those bars I met a former dissident who noticed my copy of Joseph Skvorecky’s **The Engineer of Human Souls**, a 600-page book that took me a few weeks to read.
+I lived in Prague for three years in my twenties, where I spent almost all of my time at bars. Sometimes I brought books along. At one of those bars I met a former dissident who noticed my copy of Joseph Skvorecky’s “The Engineer of Human Souls,” a 600-page tome that took me a few weeks to read.
 
 This guy told me back in the days of samizdat, when the Soviets banned books like Texans, a single copy of Skvorecky’s outlawed book made it back through the Iron Curtain from Canada, where Skvorecky had emigrated. Readers lucky enough to be on the list had a single night to read it.
 
