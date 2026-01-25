@@ -115,22 +115,6 @@
             const postContent = document.querySelector('.post-content');
             const feedLink = document.querySelector('.feed-link');
 
-            // Check for saved preference
-            const savedFont = localStorage.getItem('preferredFont');
-            if (savedFont === 'serif') {
-            postContent.classList.add('serif-mode');
-            feedLink.classList.add('serif-mode');
-            toggleButtons.forEach(btn => {
-            if (btn.dataset.font === 'serif') {
-            btn.classList.add('active');
-            btn.setAttribute('aria-pressed', 'true');
-            } else {
-            btn.classList.remove('active');
-            btn.setAttribute('aria-pressed', 'false');
-            }
-            });
-            }
-
             toggleButtons.forEach(button => {
             button.addEventListener('click', function() {
             const selectedFont = this.dataset.font;
@@ -147,11 +131,9 @@
             if (selectedFont === 'serif') {
             postContent.classList.add('serif-mode');
             feedLink.classList.add('serif-mode');
-            localStorage.setItem('preferredFont', 'serif');
             } else {
             postContent.classList.remove('serif-mode');
             feedLink.classList.remove('serif-mode');
-            localStorage.setItem('preferredFont', 'sans-serif');
             }
             });
             });
