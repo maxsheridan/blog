@@ -1,34 +1,9 @@
-article .post-content p + p,
-article > div:not(.post-content):not(.font-toggle) > * + * {
-    margin-block-start: var(--space-1);
-}
-
-article .post-content p + h3 {
-    margin-block-start: var(--space-3);
-    margin-block-end: var(--space-0);
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    max-width: 50ch;
-    margin: 0 auto;
-}
-
 .post-intro {
     display: block;
     padding: var(--space-2) 0;
     border-top: 2px dotted var(--primary);
     border-bottom: 2px dotted var(--primary);
     content: "";
-}
-
-article a:not(.category a):not(.post-navigation a) {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--accent);
-    text-underline-offset: 2px;
-    text-decoration-skip-ink: all;
 }
 
 .post-intro .category {
