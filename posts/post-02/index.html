@@ -8,7 +8,7 @@
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
         <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
         <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/shared.css">
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" >
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
@@ -41,6 +41,7 @@
                 </ul>
             </nav>
         </header>
+        <style>article .post-content p + p,article>div:not(.post-content):not(.font-toggle)>* + *{margin-block-start:var(--space-1);}article .post-content p + h3{margin-block-start:var(--space-3);margin-block-end:var(--space-0);}article{display:flex;flex-direction:column;max-width:50ch;margin:0 auto;}.post-intro{display:block;padding:var(--space-2) 0;border-top:2px dotted var(--primary);border-bottom:2px dotted var(--primary);content:"";}article a:not(.category a):not(.post-navigation a){text-decoration:underline;text-decoration-thickness:2px;text-decoration-color:var(--accent);text-underline-offset:2px;text-decoration-skip-ink:all;}.post-intro .category{display:inline-block;font-variation-settings:"wdth" 80,"wght" 450;text-transform:uppercase;border-radius:.75rem;color:var(--background);padding:.15rem .75rem;background:var(--primary);}.font-toggle{display:inline-flex;position:relative;width:fit-content;margin-block-start:var(--space-3);padding:2px;border:1px solid var(--accent);border-radius:50px;background:var(--background);}.toggle-option{position:relative;padding:.5rem 1.25rem;font-size:var(--paragraph);font-weight:500;color:var(--accent);background:transparent;transition:all .3s ease;cursor:pointer;}.toggle-option:first-child{border-radius:50px 0 0 50px;}.toggle-option:last-child{border-radius:0 50px 50px 0;}.toggle-option.active{background:var(--primary);color:var(--background);}.toggle-option:hover:not(.active){color:var(--primary);}.toggle-option .sans{font-family:var(--body);}.toggle-option .serif{font-family:Georgia,serif;}.post-content{margin-block-start:var(--space-2);margin-block-end:var(--space-3);}.post-content.serif-mode,.feed-link.serif-mode{font-family:Georgia,serif;}blockquote,figure{margin-block-start:var(--space-2);margin-block-end:var(--space-2);}blockquote>* + *{margin-block-start:var(--space-0);}blockquote{border-left:2px solid lightgray;padding-left:1.5rem;}img{width:100%;height:auto;}figure.with-caption{margin-block-start:var(--space-2);margin-block-end:var(--space-2);}figure.with-caption figcaption{margin-block-start:var(--space--3);font-family:Georgia,serif;font-size:calc(var(--paragraph) * .85);font-style:italic;color:var(--caption);}.post-navigation{display:flex;justify-content:space-between;align-items:center;gap:.5rem;font-family:var(--display);font-size:calc(var(--paragraph) * 1.2);line-height:1.2;text-transform:uppercase;}.post-navigation>a{width:50%;}.next{text-align:right;}.post-navigation>a.next:only-child{margin-left:auto;}.post-navigation>a:only-child{width:65%;}</style>
         <main id="main" class="article" tabindex="-1">
             <article>
                 <div class="post-intro">
@@ -109,35 +110,7 @@
                 </nav>
             </article>
         </main>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            const toggleButtons = document.querySelectorAll('.toggle-option');
-            const postContent = document.querySelector('.post-content');
-            const feedLink = document.querySelector('.feed-link');
-
-            toggleButtons.forEach(button => {
-            button.addEventListener('click', function() {
-            const selectedFont = this.dataset.font;
-
-            // Update active states
-            toggleButtons.forEach(btn => {
-            btn.classList.remove('active');
-            btn.setAttribute('aria-pressed', 'false');
-            });
-            this.classList.add('active');
-            this.setAttribute('aria-pressed', 'true');
-
-            // Apply font change
-            if (selectedFont === 'serif') {
-            postContent.classList.add('serif-mode');
-            feedLink.classList.add('serif-mode');
-            } else {
-            postContent.classList.remove('serif-mode');
-            feedLink.classList.remove('serif-mode');
-            }
-            });
-            });
-            });
+        <script>document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll(".toggle-option"),t=document.querySelector(".post-content"),s=document.querySelector(".feed-link");e.forEach((o=>{o.addEventListener("click",(function(){const o=this.dataset.font;e.forEach((e=>{e.classList.remove("active"),e.setAttribute("aria-pressed","false")})),this.classList.add("active"),this.setAttribute("aria-pressed","true"),"serif"===o?(t.classList.add("serif-mode"),s.classList.add("serif-mode")):(t.classList.remove("serif-mode"),s.classList.remove("serif-mode"))}))}))}));
         </script>
         <footer aria-label="Footer info">
             <a href="/colophon">Colophon</a>

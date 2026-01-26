@@ -7,7 +7,7 @@
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content"/>
                 <meta name="color-scheme" content="light dark"/>
-                <link rel="stylesheet" href="/assets/css/style.css"/>
+                <link rel="stylesheet" href="/assets/css/shared.css"/>
                 <title>Feed - This Is A Blog</title>
                 <style>.subscribe{width:max-content;padding:.75rem 1rem;margin-block-start:var(--space-2);margin-block-end:var(--space-3);border:1px solid var(--accent);border-radius:1rem;box-shadow:0 2px 6px rgba(0,0,0,.05);font-family:monospace;font-size:calc(.9rem + .15vw);word-break:break-all;color:var(--background);background:var(--primary);cursor:pointer;transition:background .2s ease}@media(hover:hover) and (pointer:fine){.subscribe:hover{opacity:.6}}h1 + p{margin-block-start:var(--space-1)}</style>
             </head>
@@ -25,7 +25,7 @@
                 </header>
                 <main id="main" tabindex="-1">
                     <h1>RSS</h1>
-                    <p class="index-intro big">This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set.
+                    <p class="big-intro">This is an old-school RSS feed. Copy the URL below and paste it into your feed reader and you’re set.
                     Or click on a link to read my latest posts.</p>
                     <p class="subscribe" onclick="copyToClipboard(this)"><xsl:value-of select="/rss/channel/atom:link/@href"/></p>                    
                     <ul class="index-list">

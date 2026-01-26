@@ -188,12 +188,9 @@ button {
   }
 }
 
-.index-intro {
+.big-intro {
   max-width: 48ch;
   margin-block-end: var(--space-2);
-}
-
-p.big {
   font-size: calc(var(--paragraph) * 1.25);
 }
 
@@ -213,37 +210,6 @@ em {
   font-weight: 400;
 }
 
-.index-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  list-style: none;
-}
-
-.index-list > li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  width: 100%;
-  padding: var(--space-2) 0;
-  border-bottom: 2px dotted var(--primary);
-}
-
-.index-list > li:first-of-type {
-  border-top: 2px dotted var(--primary);
-}
-
-.index-list .link > a {
-  font-family: var(--display);
-  font-size: var(--heading-1);
-  text-transform: uppercase;
-  line-height: 1.1;
-  color: var(--primary);
-}
-
 .arrow {
   width: .8em;
   height: auto;
@@ -261,162 +227,6 @@ hr {
   align-items: flex-start;
   font-variation-settings: "wdth" 80, "wght" 450;
   text-transform: uppercase;
-}
-
-article .post-content p + p,
-article > div:not(.post-content):not(.font-toggle) > * + * {
-  margin-block-start: var(--space-1);
-}
-
-article .post-content p + h3 {
-  margin-block-start: var(--space-3);
-  margin-block-end: var(--space-0);
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  max-width: 50ch;
-  margin: 0 auto;
-}
-
-.post-intro {
-  display: block;
-  padding: var(--space-2) 0;
-  border-top: 2px dotted var(--primary);
-  border-bottom: 2px dotted var(--primary);
-  content: "";
-}
-
-article a:not(.category a):not(.post-navigation a) {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--accent);
-  text-underline-offset: 2px;
-  text-decoration-skip-ink: all;
-}
-
-.post-intro .category {
-  display: inline-block;
-  font-variation-settings: "wdth" 80, "wght" 450;
-  text-transform: uppercase;
-  border-radius: .75rem;
-  color: var(--background);
-  padding: .15rem .75rem;
-  background: var(--primary);
-}
-
-.font-toggle {
-  display: inline-flex;
-  position: relative;
-  width: fit-content;
-  margin-block-start: var(--space-3);
-  padding: 2px;
-  border: 1px solid var(--accent);
-  border-radius: 50px;
-  background: var(--background);
-}
-
-.toggle-option {
-  position: relative;
-  padding: 0.5rem 1.25rem;
-  font-size: var(--paragraph);
-  font-weight: 500;
-  color: var(--accent);
-  background: transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.toggle-option:first-child {
-  border-radius: 50px 0 0 50px;
-}
-
-.toggle-option:last-child {
-  border-radius: 0 50px 50px 0;
-}
-
-.toggle-option.active {
-  background: var(--primary);
-  color: var(--background);
-}
-
-.toggle-option:hover:not(.active) {
-  color: var(--primary);
-}
-
-.toggle-option .sans {
-  font-family: var(--body);
-}
-
-.toggle-option .serif {
-  font-family: Georgia, serif;
-}
-
-.post-content {
-  margin-block-start: var(--space-2);
-  margin-block-end: var(--space-3);
-}
-
-.post-content.serif-mode,
-.feed-link.serif-mode {
-  font-family: Georgia, serif;
-}
-
-blockquote,
-figure  {
-  margin-block-start: var(--space-2);
-  margin-block-end: var(--space-2);
-}
-
-blockquote > * + * {
-  margin-block-start: var(--space-0);
-}
-
-blockquote {
-  border-left: 2px solid lightgray;
-  padding-left: 1.5rem;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-figure.with-caption {
-  margin-block-start: var(--space-2);
-  margin-block-end: var(--space-2);
-}
-
-figure.with-caption figcaption {
-  margin-block-start: var(--space--3);
-  font-family: Georgia, serif;
-  font-size: calc(var(--paragraph) * 0.85);
-  font-style: italic;
-  color: var(--caption);
-}
-
-.post-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: .5rem;
-  font-family: var(--display);
-  font-size: calc(var(--paragraph) * 1.1);
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.post-navigation > a {
-  width: 50%;
-}
-
-.next {
-  text-align: right;
-}
-
-.post-navigation > a.next:only-child {
-  margin-left: auto;
 }
 
 footer {
