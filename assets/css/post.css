@@ -117,18 +117,6 @@ figure.with-caption figcaption {
     text-transform: uppercase;
 }
 
-.post-navigation > a {
-    width: 50%;
-}
-
-.next {
-    text-align: right;
-}
-
 .post-navigation > a.next:only-child {
     margin-left: auto;
-}
-
-.post-navigation > a:only-child {
-    width: 65%;
 }
