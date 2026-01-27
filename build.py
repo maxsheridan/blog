@@ -138,10 +138,22 @@ class BlogBuilder:
         template = self.env.get_template('post.html')
         
         count = 0
+        total_posts = len(self.posts)
         for i, post in enumerate(self.posts):
+            # Calculate post numbers (reversed since posts are sorted newest first)
+            current_number = str(total_posts - i).zfill(2)
+            
             # Determine previous and next posts
             prev_post = self.posts[i + 1] if i < len(self.posts) - 1 else None
             next_post = self.posts[i - 1] if i > 0 else None
+            
+            # Add post numbers to prev/next posts
+            if prev_post:
+                prev_post = dict(prev_post)
+                prev_post['number'] = str(total_posts - (i + 1)).zfill(2)
+            if next_post:
+                next_post = dict(next_post)
+                next_post['number'] = str(total_posts - (i - 1)).zfill(2)
             
             html = template.render(
                 post=post,
