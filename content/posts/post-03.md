@@ -7,7 +7,7 @@ category: Writing
 
 I’ve blundered through just about every facet of professional writing imaginable.
 
-I once sent a 1,000-page manuscript to an unsuspecting publisher in Minnesota in a box that looked just like the one Kevin Spacey put Gwyneth Paltrow’s head in and sent to Brad Pitt in “Seven.”
+I once sent a 1,000-page manuscript to an unsuspecting publisher in Minnesota in a box that looked just like the one Kevin Spacey put Gwyneth Paltrow’s head in in “Seven.”
 
 I’ve argued with well-meaning agents and submitted unhinged flash fiction to top-notch lit magazines until they asked me to stop.
 
