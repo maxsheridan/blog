@@ -34,7 +34,7 @@
     padding: 0.5rem 1.25rem;
     font-size: var(--paragraph);
     font-weight: 500;
-    color: var(--primary);
+    color: var(--accent);
     background: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -63,8 +63,8 @@
 }
 
 @media (hover:hover) and (pointer:fine) {
-.toggle-option:hover:not(.active) {
-    color: var(--accent);
+.toggle-option:not(.active):hover {
+    color: var(--primary);
     }
 }
 
