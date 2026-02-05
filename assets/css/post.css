@@ -7,7 +7,6 @@
 
 .post-intro .category {
     display: inline-block;
-    padding: .15rem .75rem;
     border-radius: .75rem;
     font-variation-settings: "wdth" 80, "wght" 450;
     text-transform: uppercase;
@@ -15,18 +14,14 @@
 }
 
 .post-intro .category a {
+    display: inline-block;
+    padding: .15rem .75rem;
     color: var(--background);
 }
 
 .post-intro .category:hover  {
-    outline: 1.5px solid var(--primary);
-    outline-offset: 3px;
+    opacity: .6;
     cursor: pointer;
-}
-
-.post-intro .category a:focus-visible {
-    outline: 3px solid var(--highlight);
-    outline-offset: .95rem;
 }
 
 .font-toggle {
