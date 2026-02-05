@@ -32,7 +32,7 @@
     padding: 0.5rem 1.25rem;
     font-size: var(--paragraph);
     font-weight: 500;
-    color: var(--accent);
+    color: var(--primary);
     background: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -46,21 +46,24 @@
     border-radius: 0 50px 50px 0;
 }
 
-.toggle-option.active {
-    background: var(--primary);
-    color: var(--background);
-}
-
-.toggle-option:hover:not(.active) {
-    color: var(--primary);
-}
-
 .toggle-option .sans {
     font-family: var(--body);
 }
 
 .toggle-option .serif {
     font-family: Georgia, serif;
+}
+
+.toggle-option.active {
+    background: var(--primary);
+    color: var(--background);
+    pointer-events: none;
+}
+
+@media (hover:hover) and (pointer:fine) {
+.toggle-option:hover:not(.active) {
+    color: var(--accent);
+    }
 }
 
 .post-content {
