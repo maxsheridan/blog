@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blog.maxsheridan.com</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
@@ -26,31 +26,31 @@
   </url>
   <url>
     <loc>https://blog.maxsheridan.com/category-writing/</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.maxsheridan.com/category-the-web/</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.maxsheridan.com/category-teaching/</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://blog.maxsheridan.com/colophon.html</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://blog.maxsheridan.com/404.html</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
