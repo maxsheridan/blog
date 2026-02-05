@@ -177,14 +177,14 @@ button:focus-visible,
 a,
 button {
   text-decoration: none;
-  color: rgb(var(--primary));
+  color: var(--primary);
+  transition: opacity 0.3s ease;
 }
 
 @media (hover:hover) and (pointer:fine) {
   a:hover,
-  button:hover {
+  button:not(.toggle-option):hover {
       opacity: .6;
-      transition: opacity 0.3s ease;
   }
 }
 
@@ -277,12 +277,12 @@ main.article ~ footer {
   top: -999px;
   left: 50%;
   transform: translateX(-50%);
-  color: rgb(var(--primary));
+  color: var(--primary);
 }
 
 .skip-link:focus {
   top: 6px;
-  color: rgb(var(--primary));
+  color: var(--primary);
 }
 
 .vh {
