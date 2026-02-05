@@ -14,7 +14,6 @@
 }
 
 .post-intro .category a {
-    display: inline-block;
     padding: .15rem .75rem;
     color: var(--background);
 }
