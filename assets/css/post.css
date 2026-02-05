@@ -24,9 +24,9 @@
     cursor: pointer;
 }
 
-.post-intro .category a:focus  {
+.post-intro .category a:focus-visible {
     outline: 3px solid var(--highlight);
-    outline-offset: 18px;
+    outline-offset: 1.05rem;
 }
 
 .font-toggle {
