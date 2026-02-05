@@ -8,11 +8,11 @@
 
 .post-intro .category {
     display: inline-block;
+    padding: .15rem .75rem;
+    border-radius: .75rem;
     font-variation-settings: "wdth" 80, "wght" 450;
     text-transform: uppercase;
-    border-radius: .75rem;
     color: var(--background);
-    padding: .15rem .75rem;
     background: var(--primary);
 }
 
@@ -32,7 +32,7 @@
     padding: 0.5rem 1.25rem;
     font-size: var(--paragraph);
     font-weight: 500;
-    color: var(--accent);
+    color: var(--primary);
     background: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -46,21 +46,24 @@
     border-radius: 0 50px 50px 0;
 }
 
-.toggle-option.active {
-    background: var(--primary);
-    color: var(--background);
-}
-
-.toggle-option:hover:not(.active) {
-    color: var(--primary);
-}
-
 .toggle-option .sans {
     font-family: var(--body);
 }
 
 .toggle-option .serif {
     font-family: Georgia, serif;
+}
+
+.toggle-option.active {
+    color: var(--background);
+    background-color: var(--primary);
+    pointer-events: none;
+}
+
+@media (hover:hover) and (pointer:fine) {
+.toggle-option:hover:not(.active) {
+    color: var(--accent);
+    }
 }
 
 .post-content {
@@ -84,8 +87,8 @@ blockquote > * + * {
 }
 
 blockquote {
-    border-left: 2px solid lightgray;
     padding-left: 1.5rem;
+    border-left: 2px solid lightgray;
 }
 
 img {
