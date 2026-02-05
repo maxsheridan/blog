@@ -182,7 +182,7 @@ button {
 }
 
 @media (hover:hover) and (pointer:fine) {
-  a:hover,
+  a:not(.category a):hover,
   button:not(.toggle-option):hover {
       opacity: .6;
   }

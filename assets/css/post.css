@@ -18,6 +18,17 @@
     color: var(--background);
 }
 
+.post-intro .category:hover  {
+    outline: 1.5px solid var(--primary);
+    outline-offset: 3px;
+    cursor: pointer;
+}
+
+.post-intro .category a:focus  {
+    outline: 3px solid var(--highlight);
+    outline-offset: 18px;
+}
+
 .font-toggle {
     display: inline-flex;
     position: relative;
