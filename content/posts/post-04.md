@@ -5,7 +5,7 @@ date: 2026-02-06
 category: Reading
 ---
 
-I decided to read fifty-two books this year. Waiting around for agents to reject my latest novel is demoralizing. Plus, I lost a long-term content writing gig last fall — possibly to AI, possibly to a twenty-year-old remote worker who could use it better than I. 
+I decided to read fifty-two books this year. Waiting around for agents to reject my latest novel is demoralizing. Plus, I lost a long-term content writing gig last fall — possibly to AI, possibly to a twenty-year-old remote worker who could use AI better than I. 
 
 Also, I’d become a bit of a sloth when it came to reading. Which just wasn’t right for a writer. 
 
