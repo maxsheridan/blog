@@ -9,7 +9,7 @@ I decided to read fifty-two books this year. Waiting around for agents to reject
 
 Also, I’d become a bit of a sloth when it came to reading. Which just wasn’t right for a writer. 
 
-Liz Pelly’s new book “Mood Machine: The Rise of Spotify and the Costs of the Perfect Playlist” was my Week 5 pick.
+Liz Pelly’s new book “Mood Machine: The Rise of Spotify and the Costs of the Perfect Playlist” was my Week 4 pick.
 
 I’m not going to issue a spoiler alert. I’m not spoiling anything, just laying out the two main arguments of the book (so I don’t forget them when I get to, say, Week 48 and have to bullshit my way through conversations in which I pretend to be sharper than I am).
 
