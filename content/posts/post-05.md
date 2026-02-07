@@ -13,7 +13,7 @@ This is one of those ideas. It’s called “The Curse of Melania” and it goes
 
 ### The Curse of Melania
 
-Why or how no one knows, but a biblical-grade curse has descended upon the cast and crew of the Melania Trump documen&shy;tary “Melania,” who are dropping like flies.
+Why or how no one knows, but a biblical-grade curse has descended upon the cast and crew of the Melania Trump documentary “Melania,” who are dropping like flies.
 
 The following is an abbreviated list of freak Melania-related tragedies reported to date:
 
