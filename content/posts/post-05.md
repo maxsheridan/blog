@@ -13,7 +13,7 @@ This is one of those ideas. It’s called “The Curse of Melania” and it goes
 
 ### The Curse of Melania
 
-Why or how no one knows, but a biblical-grade curse has descended upon the cast and crew of the Melania Trump documentary “Melania,” who are dropping like flies.
+Why or how no one knows, but a biblical-grade curse has descended upon the cast and crew of the Melania Trump documen&shy;tary “Melania,” who are dropping like flies.
 
 The following is an abbreviated list of freak Melania-related tragedies reported to date:
 
@@ -28,7 +28,7 @@ Other crew members are reporting similarly baffling syndromes. Here are a few of
 
 “Mira,” a caterer, is plagued by morbid synaesthesia. When she sees a picture of her fiancé, for instance, she smells the color yellow.
 
-Meanwhile, actor John Voigt’s corpse (Make Hollywood Great again!) was found in an empty movie theater in Wrench, Montana, three days after he expired at a personal screening of the movie. During the autopsy, a scarab beetle crawled out of Voigt’s mouth.
+Meanwhile, actor John Voight’s corpse (Make Hollywood Great Again!) was found in an empty movie theater in Wrench, Montana, three days after he expired at a personal screening of the movie. During the autopsy, a scarab beetle crawled out of Voight’s mouth.
 
 The list goes on.
 
