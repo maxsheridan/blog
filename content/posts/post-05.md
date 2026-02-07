@@ -13,11 +13,11 @@ This is one of those ideas. It’s called “The Curse of Melania” and it goes
 
 ### The Curse of Melania
 
-Why or how no one knows, but a biblical-grade curse has descended upon the cast and crew of the Melania Trump documentary “Melania,” who are dropping like flies.
+How or why no one knows, but a biblical-grade curse has descended upon the cast and crew of the Melania Trump documentary “Melania,” who are dropping like flies.
 
 The following is an abbreviated list of freak Melania-related tragedies reported to date:
 
-1. Brett Rattner the disgraced “Melania” director gorged himself to death on mangoes in Koh Samui after his parents stumbled upon the film in a strip mall in Sarasota, Florida.
+1. Brett Ratner the disgraced “Melania” director gorged himself to death on mangoes in Koh Samui after his parents stumbled upon the film in a strip mall in Sarasota, Florida.
 2. Hervé Pierre, Melania’s personal stylist, fell into a deep catatonia from which he periodically wakens screaming in mortal terror.
 3. Tony Neiman, the film’s composer, has lost his hearing.
 4. Editor Alex Márquez disappeared in a West LA Sam’s Club, and was later found on a nearby street corner unaware of who he was or where he lived. He later jumped off a bridge.
