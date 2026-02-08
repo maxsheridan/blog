@@ -19,7 +19,7 @@ The following is an abbreviated list of freak Melania-related tragedies:
 
 1. Brett Ratner the disgraced “Melania” director gorges himself to death on mangoes in Koh Samui after his parents stumble upon the film in a strip mall in Sarasota, Florida.
 2. Hervé Pierre, Melania’s personal stylist, falls into a deep catatonia from which he periodically wakens screaming in mortal terror.
-3. Tony Neiman, the film’s composer, loses his hearing.
+3. Tony Neiman, the film’s composer, looses his hearing.
 4. Editor Alex Márquez disappears in a West LA Sam’s Club. He is found on a nearby street corner unaware of who he is or where he lives. He later jumps off a bridge.
 
 Other crew members report similarly baffling syndromes. Here are a few of them.
