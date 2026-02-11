@@ -18,6 +18,7 @@ class BlogBuilder:
             print(f"Copied {src} to {dst}")
         else:
             print(f"Warning: {src} does not exist. Skipping feed.xsl copy.")
+    
     def __init__(self):
         self.root = Path(__file__).parent
         self.content_dir = self.root / 'content'
@@ -50,8 +51,6 @@ class BlogBuilder:
         """Convert YYYY-MM-DD to 'Oct 23, 2025' format"""
         date_obj = datetime.strptime(date_str, '%Y-%m-%d')
         return date_obj.strftime('%b %d, %Y')
-
-    
     
     def slugify(self, text):
         """Convert text to URL-friendly slug"""
@@ -59,6 +58,27 @@ class BlogBuilder:
         text = re.sub(r'[^\w\s-]', '', text)
         text = re.sub(r'[-\s]+', '-', text)
         return text.strip('-')
+    
+    def parse_frontmatter(self, content):
+        """Extract YAML frontmatter from markdown content.
+        More robust version that handles quoted values."""
+        frontmatter = {}
+        lines = content.split('\n')
+        
+        if lines[0].strip() == '---':
+            i = 1
+            while i < len(lines) and lines[i].strip() != '---':
+                line = lines[i].strip()
+                if ':' in line:
+                    key, value = line.split(':', 1)
+                    frontmatter[key.strip()] = value.strip().strip('"')
+                i += 1
+            
+            content_start = i + 1
+            remaining_content = '\n'.join(lines[content_start:]).strip()
+            return frontmatter, remaining_content
+        
+        return {}, content
     
     def wrap_images_with_captions(self, html_content):
         """Convert <img><em>caption</em> patterns to <figure><img><figcaption>"""
@@ -89,23 +109,6 @@ class BlogBuilder:
         html_content = re.sub(r'<h3>([^<]+)</h3>', r'<h3>\n    \1\n</h3>', html_content)
         
         return html_content
-    
-    def parse_frontmatter(self, content):
-        """Extract frontmatter and content from markdown file"""
-        if not content.startswith('---'):
-            return {}, content
-        
-        parts = content.split('---', 2)
-        if len(parts) < 3:
-            return {}, content
-        
-        frontmatter = {}
-        for line in parts[1].strip().split('\n'):
-            if ':' in line:
-                key, value = line.split(':', 1)
-                frontmatter[key.strip()] = value.strip()
-        
-        return frontmatter, parts[2].strip()
     
     def load_posts(self):
         """Load all posts from content/posts directory"""
