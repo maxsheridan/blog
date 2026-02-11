@@ -11,6 +11,7 @@
     font-variation-settings: "wdth" 80, "wght" 450;
     text-transform: uppercase;
     background-color: var(--primary);
+    transition: opacity 0.3s ease;
 }
 
 .post-intro .category a {
