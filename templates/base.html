@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
-<meta name="color-scheme" content="light dark">
-<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
-<link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-{% block styles %}{% endblock %}
-<link rel="stylesheet" href="/assets/css/shared.css">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" >
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-<link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
-<link rel="manifest" href="/manifest.json" type="application/json">
-<link rel="canonical" href="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
-<title>{% block title %}{{ page_title|default('This Is A Blog') }}{% endblock %}</title>
-<meta name="thumbnail" content="https://blog.maxsheridan.com/assets/graphics/share.webp">
-<meta property="og:site_name" content="This Is A Blog">
-<meta property="og:title" content="{{ page_title|default('This Is A Blog') }}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
-<meta property="og:image" content="https://blog.maxsheridan.com/assets/graphics/share.webp">
-<meta property="og:image:type" content="image/webp">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="800">
-</head>
-<body>
-<header>
-<a class="skip-link" href="#main">Skip to main content</a>
-{% block site_title %}<a class="site-title" href="/">This Is A Blog</a>{% endblock %}
-{# Leave blank line here #}
-
-<nav aria-label="Links">
-<ul>
-<li>
-<a aria-label="Max Sheridan main website" href="https://maxsheridan.com">Website</a>
-</li>
-<li class="separator" aria-hidden="true"></li>
-<li>
-<button aria-label="Copy email address" id="copyLink" type="button" onclick="copyEmail()">Email</button>
-</li>
-</ul>
-</nav>
-</header>
-{% block content %}{% endblock %}
-<footer aria-label="Footer info">
-<a href="/colophon">Colophon</a>
-<hr aria-hidden="true">
-<p>&copy; {{ current_year }} Max Sheridan</p>
-</footer>
-<script>
-function copyEmail() {navigator.clipboard.writeText('your@email.com'); alert('Email copied to clipboard!');}
-</script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+        <meta name="color-scheme" content="light dark">
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+        <link rel="preload" href="/assets/type/bigshoulders_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="/assets/type/hexfranklin_variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        {% block styles %}{% endblock %}
+        <link rel="stylesheet" href="/assets/css/shared.css">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" >
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+        <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png?v=3" type="image/png">
+        <link rel="manifest" href="/manifest.json" type="application/json">
+        <link rel="canonical" href="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
+        <title>{% block title %}{{ page_title|default('This Is A Blog') }}{% endblock %}</title>
+        <meta name="thumbnail" content="https://blog.maxsheridan.com/assets/graphics/share.webp">
+        <meta property="og:site_name" content="This Is A Blog">
+        <meta property="og:title" content="{{ page_title|default('This Is A Blog') }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ canonical_url|default('https://blog.maxsheridan.com') }}">
+        <meta property="og:image" content="https://blog.maxsheridan.com/assets/graphics/share.webp">
+        <meta property="og:image:type" content="image/webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="1200">
+    </head>
+    <body>
+        <header>
+            <a class="skip-link" href="#main">Skip to main content</a>
+            {% block site_title %}
+                <a class="site-title" href="/">This Is A Blog</a>
+            {% endblock %}
+            <nav aria-label="Links">
+                <ul>
+                    <li>
+                        <a aria-label="Max Sheridan main website" href="https://maxsheridan.com">Website</a>
+                    </li>
+                    <li class="separator" aria-hidden="true"></li>
+                    <li>
+                        <button aria-label="Copy email address" id="copyLink" type="button" onclick="copyEmail()">Email</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        {% endblock %}
+        <footer aria-label="Footer info">
+            <a href="/colophon">Colophon</a>
+            <hr aria-hidden="true">
+            <p>&copy; {{ current_year }} Max Sheridan</p>
+        </footer>
+        <script>
+            function copyEmail() {navigator.clipboard.writeText('your@email.com'); alert('Email copied to clipboard!');}
+        </script>
+    </body>
 </html>

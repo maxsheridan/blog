@@ -76,6 +76,20 @@ class BlogBuilder:
         
         return html_content
     
+    def format_html_elements(self, html_content):
+        """Format HTML elements with proper indentation for readability"""
+        # Format paragraphs: <p>text</p> -> <p>\n    text\n</p>
+        html_content = re.sub(r'<p>([^<]+)</p>', r'<p>\n    \1\n</p>', html_content)
+        
+        # Format list items: <li>text</li> -> <li>\n    text\n</li>
+        html_content = re.sub(r'<li>([^<]+)</li>', r'<li>\n    \1\n</li>', html_content)
+        
+        # Format headings: <h2>text</h2> -> <h2>\n    text\n</h2>
+        html_content = re.sub(r'<h2>([^<]+)</h2>', r'<h2>\n    \1\n</h2>', html_content)
+        html_content = re.sub(r'<h3>([^<]+)</h3>', r'<h3>\n    \1\n</h3>', html_content)
+        
+        return html_content
+    
     def parse_frontmatter(self, content):
         """Extract frontmatter and content from markdown file"""
         if not content.startswith('---'):
@@ -106,6 +120,7 @@ class BlogBuilder:
             frontmatter, body = self.parse_frontmatter(content)
             html_content = markdown.markdown(body, extensions=['attr_list'])
             html_content = self.wrap_images_with_captions(html_content)
+            html_content = self.format_html_elements(html_content)
             
             post = {
                 'title': frontmatter.get('title', 'Untitled'),
@@ -280,6 +295,7 @@ class BlogBuilder:
             frontmatter, body = self.parse_frontmatter(content)
             html_content = markdown.markdown(body, extensions=['attr_list'])
             html_content = self.wrap_images_with_captions(html_content)
+            html_content = self.format_html_elements(html_content)
             
             page = {
                 'title': frontmatter.get('title', md_file.stem.title()),
