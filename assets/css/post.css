@@ -132,7 +132,7 @@ figure.with-caption figcaption {
     color: var(--caption);
 }
 
-.post-navigation {
+.post-navigation ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,6 +141,10 @@ figure.with-caption figcaption {
     font-size: calc(var(--paragraph) * 1.2);
     line-height: 1.2;
     text-transform: uppercase;
+}
+
+.post-navigation li {
+    list-style: none;
 }
 
 .post-navigation > a.next:only-child {

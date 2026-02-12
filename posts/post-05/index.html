@@ -27,10 +27,10 @@
         <meta property="og:image:height" content="1200">
     </head>
     <body>
+        <a class="skip-link" href="#main">Skip to main content</a>
         <header>
-            <a class="skip-link" href="#main">Skip to main content</a>
-            <a class="site-title" href="/">This Is A Blog</a>
-            <nav aria-label="Links">
+            <a class="site-title" href="/">This Is A Blog<span class="vh">Home page</span></a>
+            <nav>
                 <ul>
                     <li>
                         <a aria-label="Max Sheridan main website" href="https://maxsheridan.com">Website</a>
@@ -47,7 +47,7 @@
                 <div class="post-intro">
                     <p class="date">Feb 07, 2026</p>
                     <p class="category">
-                        <a href="/category-film/">Film</a>
+                        <a href="/category-film/"><span class="vh">Category:</span>Film</a>
                     </p>
                     <h1>The Curse of Melania</h1>
                     <h2>“They’re dropping like flies!”</h2>
@@ -115,14 +115,24 @@
                         It just isn’t fair. Mike Judge never had this kind of support from delusional conservatives when “Idiocracy” hit the theaters twenty years ago. And he’d made a whole movie about them.
                     </p>
                 </div>
-                <hr>
+                <hr aria-hidden="true">
                 <p class="feed-link">
                     <span>P.S. I'm lazy, you won't get flooded:</span>
                     <a href="/feed.xml"> Subscribe to my feed.</a>
                 </p>
                 <nav class="post-navigation" aria-label="Post navigation">
-                    <a class="prev" href="/posts/post-04/" rel="prev"><svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M40 37.07 3.1.16.16 3.09 37.06 40z"/><path d="M4.15 0H0v31.14h4.15z"/><path d="M31.13 0H0v4.15h31.13z"/></svg>04</a>
-                    <a class="all" href="/">INDEX</a>
+                    <ul>
+                        <li>
+                            <a class="prev" href="/posts/post-04/" rel="prev">
+                                <span class="vh">Previous post: </span>
+                                <svg class="arrow" aria-hidden="true" viewBox="0 0 40 40" fill="currentColor"><path d="M40 37.07 3.1.16.16 3.09 37.06 40z"/><path d="M4.15 0H0v31.14h4.15z"/><path d="M31.13 0H0v4.15h31.13z"/></svg>
+                                04
+                            </a>
+                        </li>
+                        <li>
+                            <a class="all" href="/">INDEX</a>
+                        </li>
+                    </ul>
                 </nav>
             </article>
         </main>
