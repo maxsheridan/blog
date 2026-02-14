@@ -173,19 +173,19 @@ button,
   cursor: pointer;
 }
 
+@media (hover:hover) and (pointer:fine) {
+  a:not(.category a):hover,
+  button:not(.toggle-option):hover {
+      opacity: .6;
+  }
+}
+
 a:focus-visible,
 button:focus-visible,
 [role="button"]:focus-visible {
   outline: 3px solid var(--highlight);
   outline-offset: 3px;
   border-radius: .25rem;
-}
-
-@media (hover:hover) and (pointer:fine) {
-  a:not(.category a):hover,
-  button:not(.toggle-option):hover {
-      opacity: .6;
-  }
 }
 
 [tabindex="-1"]:focus {
