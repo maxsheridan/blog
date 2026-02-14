@@ -160,6 +160,13 @@ nav ul  {
   cursor: pointer;
 }
 
+a,
+button {
+  text-decoration: none;
+  color: var(--primary);
+  transition: opacity 0.3s ease;
+}
+
 button, 
 [role="button"] {
   -webkit-appearance: none;
@@ -174,18 +181,15 @@ button:focus-visible,
   border-radius: .25rem;
 }
 
-a,
-button {
-  text-decoration: none;
-  color: var(--primary);
-  transition: opacity 0.3s ease;
-}
-
 @media (hover:hover) and (pointer:fine) {
   a:not(.category a):hover,
   button:not(.toggle-option):hover {
       opacity: .6;
   }
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
 }
 
 .big-intro {
