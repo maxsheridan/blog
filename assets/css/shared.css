@@ -43,7 +43,7 @@
   --space-4: calc(var(--space-3) * var(--ratio));
   --body: 'Hex Franklin Narrow',system-ui, sans-serif;
   --display: 'Big Shoulders 36', system-ui, sans-serif;
-  --paragraph: calc(1.09rem + .5vw);
+  --paragraph: calc(1.15rem + .4vw);
   --heading-1: calc(var(--paragraph) * 2.8);
   --primary: #161718;
   --highlight: #0000FF;
@@ -160,6 +160,13 @@ nav ul  {
   cursor: pointer;
 }
 
+a,
+button {
+  text-decoration: none;
+  color: var(--primary);
+  transition: opacity 0.3s ease;
+}
+
 button, 
 [role="button"] {
   -webkit-appearance: none;
@@ -174,18 +181,15 @@ button:focus-visible,
   border-radius: .25rem;
 }
 
-a,
-button {
-  text-decoration: none;
-  color: var(--primary);
-  transition: opacity 0.3s ease;
-}
-
 @media (hover:hover) and (pointer:fine) {
   a:not(.category a):hover,
   button:not(.toggle-option):hover {
       opacity: .6;
   }
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
 }
 
 .big-intro {
