@@ -152,14 +152,6 @@ nav ul  {
   content: "";
 }
 
-#copyLink {
-  font: inherit;
-  line-height: normal;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 a,
 button {
   text-decoration: none;
@@ -171,6 +163,14 @@ button,
 [role="button"] {
   -webkit-appearance: none;
   appearance: none;
+}
+
+#copyLink {
+  font: inherit;
+  line-height: normal;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:focus-visible,
